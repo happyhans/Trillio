@@ -115,7 +115,7 @@ public class Play extends ActionBarActivity {
     {
         if(!a2_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
    //         mp.release();
             //change color
@@ -134,7 +134,7 @@ public class Play extends ActionBarActivity {
     {
         if(!a3_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
  //           mp.release();
             //change color
@@ -151,7 +151,7 @@ public class Play extends ActionBarActivity {
     {
         if(!a4_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
    //         mp.release();
             //change color
@@ -170,7 +170,7 @@ public class Play extends ActionBarActivity {
     {
         if(!b1_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
             b1.setBackgroundColor(Color.parseColor("#1E88E5"));
             b1_pressed=!b1_pressed;
@@ -200,7 +200,7 @@ public class Play extends ActionBarActivity {
     {
         if(!b3_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
             b3.setBackgroundColor(Color.parseColor("#1E88E5"));
             b3_pressed=!b3_pressed;
@@ -215,7 +215,7 @@ public class Play extends ActionBarActivity {
     {
         if(!b4_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
             b4.setBackgroundColor(Color.parseColor("#1E88E5"));
             b4_pressed = true;
@@ -231,7 +231,7 @@ public class Play extends ActionBarActivity {
     {
         if(!c1_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
             c1.setBackgroundColor(Color.parseColor("#42A5F5"));
             c1_pressed=!c1_pressed;
@@ -246,7 +246,7 @@ public class Play extends ActionBarActivity {
     {
         if(!c2_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
             c2.setBackgroundColor(Color.parseColor("#42A5F5"));
             c2_pressed=!c2_pressed;
@@ -276,7 +276,7 @@ public class Play extends ActionBarActivity {
     {
         if(!c4_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
             c4.setBackgroundColor(Color.parseColor("#42A5F5"));
             c4_pressed = true;
@@ -291,7 +291,7 @@ public class Play extends ActionBarActivity {
     {
         if(!d1_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
             d1.setBackgroundColor(Color.parseColor("#90CAF9"));
             d1_pressed=!d1_pressed;
@@ -306,7 +306,7 @@ public class Play extends ActionBarActivity {
     {
         if(!d2_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
             d2.setBackgroundColor(Color.parseColor("#90CAF9"));
             d2_pressed=!d2_pressed;
@@ -321,7 +321,7 @@ public class Play extends ActionBarActivity {
     {
         if(!d3_pressed)
         {
-            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
             d3.setBackgroundColor(Color.parseColor("#90CAF9"));
             d3_pressed=!d3_pressed;
