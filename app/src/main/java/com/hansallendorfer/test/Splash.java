@@ -15,7 +15,7 @@ public class Splash extends ActionBarActivity {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.damnboi);
+                    MediaPlayer mp = MediaPlayer.create(Splash.this,R.raw.damnboi);
                     mp.start();
                     sleep(3000);
                 }
