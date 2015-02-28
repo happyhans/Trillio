@@ -80,8 +80,8 @@ public class Play extends ActionBarActivity {
             mp.start();
  //           mp.release();
             //change color
-//            a1.setBackgroundColor(Color.parseColor("#80CBCBC4"));
-//            a1_pressed = true;
+            a1.setBackgroundColor(Color.GREEN);
+            a1_pressed = true;
         }
         else{
             //change to default
@@ -95,8 +95,8 @@ public class Play extends ActionBarActivity {
             mp.start();
    //         mp.release();
             //change color
-//            a2.setBackgroundColor(Color.parseColor("4DB6AC"));
-//            a2_pressed = true;
+            a2.setBackgroundColor(Color.BLUE);
+            a2_pressed = true;
         }
         else{
             //a2.setBackgroundColor(Color.parseColor("#B2DFDB"));
@@ -109,9 +109,8 @@ public class Play extends ActionBarActivity {
             mp.start();
  //           mp.release();
             //change color
-//            a3.setBackgroundColor(Color.parseColor("#26A69A"));
-//            a3_pressed = true;
-
+            a3.setBackgroundColor(Color.parseColor("#26A69A"));
+            a3_pressed = true;
         }
         else{
             //a3.setBackgroundColor(Color.parseColor("#B2DFDB"));
@@ -123,110 +122,141 @@ public class Play extends ActionBarActivity {
             mp.start();
    //         mp.release();
             //change color
-//            a4.setBackgroundColor(Color.parseColor("#009688"));
-//            a4_pressed = true;
+            a4.setBackgroundColor(Color.parseColor("#009688"));
+            a4_pressed = true;
 
         }
         else{
            // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
         }
     }
-//    public void on_b1(View view){
-//        if(b1_pressed){
-//
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_b2(View view){
-//        if(b2_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_b3(View view){
-//        if(b3_pressed){
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_b4(View view){
-//        if(b4_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_c1(View view){
-//        if(c1_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_c2(View view){
-//        if(c2_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_c3(View view){
-//        if(c3_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_c4(View view){
-//        if(c4_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_d1(View view){
-//        if(d1_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_d2(View view){
-//        if(d2_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//    public void on_d3(View view){
-//        if(d3_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
-//
-//    public void on_d4(View view){
-//        if(d4_pressed){
-//
-//        }
-//        else{
-//
-//        }
-//    }
+    public void on_b1(View view){
+        if(!b1_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+    public void on_b2(View view){
+        if(!b2_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+    public void on_b3(View view){
+        if(!b3_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+    public void on_b4(View view){
+        if(!b4_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
+            mp.start();
+            b4.setBackgroundColor(Color.parseColor("#009688"));
+            b4_pressed = true;
+
+        }
+        else{
+
+        }
+    }
+    public void on_c1(View view){
+        if(!c1_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            mp.start();
+
+
+        }
+        else{
+
+        }
+    }
+    public void on_c2(View view){
+        if(!c2_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            mp.start();
+
+
+        }
+        else{
+
+        }
+    }
+    public void on_c3(View view){
+        if(!c3_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            mp.start();
+
+
+        }
+        else{
+
+        }
+    }
+    public void on_c4(View view){
+        if(!c4_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
+            mp.start();
+            c4.setBackgroundColor(Color.parseColor("#009688"));
+            c4_pressed = true;
+        }
+        else{
+
+        }
+    }
+    public void on_d1(View view){
+        if(!d1_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+    public void on_d2(View view){
+        if(!d2_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+    public void on_d3(View view){
+        if(!d3_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            mp.start();
+
+        }
+        else{
+
+        }
+    }
+
+    public void on_d4(View view){
+        if(!d4_pressed){
+            MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
+            mp.start();
+            d4.setBackgroundColor(Color.parseColor("#009688"));
+            d4_pressed = true;
+        }
+        else{
+
+        }
+    }
 
 }
