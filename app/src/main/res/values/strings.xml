@@ -15,9 +15,9 @@
         <item>4</item>
     </string-array>
 
-    <string name="radio4">128</string>
-    <string name="radio5">108</string>
-    <string name="radio6">136</string>
+    <string name="radio4">136</string>
+    <string name="radio5">128</string>
+    <string name="radio6">108</string>
     <string name="radio7">92</string>
 
 <!-- TODO: Remove or change this placeholder text -->

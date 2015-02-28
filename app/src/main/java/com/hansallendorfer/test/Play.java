@@ -64,6 +64,11 @@ public class Play extends ActionBarActivity {
         //numMeasures++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
+//        Intent intent = getIntent();
+//        final int beats = intent.getIntExtra("radio1option",0);
+//        final int bpm = intent.getIntExtra("radio2option",0);
+
         //viewpager = (ViewPager) findViewById(R.id.pager);
         // PagerAdapter p = new PagerAdapter(getSupportFragmentManager());
         // viewpager.setAdapter(p);
@@ -171,10 +176,37 @@ public class Play extends ActionBarActivity {
             public void run() {
                 try {
                     Timer timer = new Timer();
-                    timer.schedule(beat1,0,4000);
-                    timer.schedule(beat2,1000,4000);
-                    timer.schedule(beat3,2000,4000);
-                    timer.schedule(beat4,3000,4000);
+                    timer.schedule(beat1,0, 1764);
+                    timer.schedule(beat2,441, 1764);
+                    timer.schedule(beat3,882, 1764);
+                    timer.schedule(beat4,1324, 1764);
+//                    if(bpm == 0){
+//                        timer.schedule(beat1,0, 1764);
+//                        timer.schedule(beat2,441, 1764);
+//                        timer.schedule(beat3,882, 1764);
+//                        timer.schedule(beat4,1324, 1764);
+//                    }
+//                    else if(bpm == 1){
+//                        timer.schedule(beat1,0,1876);
+//                        timer.schedule(beat2,469,1876);
+//                        timer.schedule(beat3,938,1876);
+//                        timer.schedule(beat4,1407,1876);
+//                    }
+//                    else if(bpm == 2){
+//                        timer.schedule(beat1,0,2220);
+//                        timer.schedule(beat2,555,2220);
+//                        timer.schedule(beat3,1110,2220);
+//                        timer.schedule(beat4,1665,2220);
+//                    }
+//                    else if(bpm == 3){
+//                        timer.schedule(beat1,0,2608);
+//                        timer.schedule(beat2,652,2608);
+//                        timer.schedule(beat3,1304,2608);
+//                        timer.schedule(beat4,1956,2608);
+//                    }
+
+
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -186,7 +218,7 @@ public class Play extends ActionBarActivity {
         //make methods to play each sound individually
 
     public void playbeep1() {
-        mp = MediaPlayer.create(Play.this, R.raw.beep1);
+        mp = MediaPlayer.create(Play.this, R.raw.clap);
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -197,7 +229,7 @@ public class Play extends ActionBarActivity {
     }
 
     public void playbeep2() {
-        mp = MediaPlayer.create(Play.this, R.raw.beep2);
+        mp = MediaPlayer.create(Play.this, R.raw.snare);
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -208,7 +240,7 @@ public class Play extends ActionBarActivity {
     }
 
     public void playdjsound1() {
-        mp = MediaPlayer.create(Play.this, R.raw.djsound1);
+        mp = MediaPlayer.create(Play.this, R.raw.ayy);
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -219,7 +251,7 @@ public class Play extends ActionBarActivity {
     }
 
     public void playdrum1() {
-        mp = MediaPlayer.create(Play.this, R.raw.drum1);
+        mp = MediaPlayer.create(Play.this, R.raw.gunclick);
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
