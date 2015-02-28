@@ -17,6 +17,7 @@ public class Play extends ActionBarActivity {
         viewpager = (ViewPager) findViewById(R.id.pager);
         PagerAdapter p = new PagerAdapter(getSupportFragmentManager());
         viewpager.setAdapter(p);
+        //hi ankit
     }
 
 
