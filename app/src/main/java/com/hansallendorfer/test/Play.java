@@ -1,5 +1,6 @@
 package com.hansallendorfer.test;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.support.v4.view.ViewPager;
@@ -8,7 +9,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 
 public class Play extends ActionBarActivity {
@@ -46,10 +49,15 @@ public class Play extends ActionBarActivity {
      Button d3;
      Button d4 ;
 
+    Spinner s;
+
+    static int numMeasures;
 //    MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
+      numMeasures++;
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_play);
       //viewpager = (ViewPager) findViewById(R.id.pager);
@@ -72,191 +80,286 @@ public class Play extends ActionBarActivity {
          d2 = (Button) findViewById(R.id.d2);
          d3 = (Button) findViewById(R.id.d3);
          d4 = (Button) findViewById(R.id.d4);
+         s=(Spinner)findViewById(R.id.spinner);
+        Integer[] i=new Integer[numMeasures];
+        for (int x=0;x<MainActivity.fragments.length();x++)
+        {
+            i[x]=x+1;
+        }
+        ArrayAdapter<Integer> adapter=new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_item,i);
+        s.setAdapter(adapter);
+        s.setOnItemSelectedListener(this);
+
     }
 
     public void on_a1(View view){
-        if(!a1_pressed){
+        if(!a1_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
  //           mp.release();
             //change color
-            a1.setBackgroundColor(Color.GREEN);
+            a1.setBackgroundColor(Color.parseColor("#1565C0"));
             a1_pressed = true;
         }
-        else{
+        else
+        {
             //change to default
+            a1.setBackgroundResource(android.R.drawable.btn_default);
+            a1_pressed=!a1_pressed;
            // a1.setBackgroundColor(Color.parseColor("#B2DFDB"));
         }
     }
 
-    public void on_a2(View view){
-        if(!a2_pressed){
+    public void on_a2(View view)
+    {
+        if(!a2_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
    //         mp.release();
             //change color
-            a2.setBackgroundColor(Color.BLUE);
+            a2.setBackgroundColor(Color.parseColor("#1565C0"));
             a2_pressed = true;
         }
-        else{
+        else
+        {
             //a2.setBackgroundColor(Color.parseColor("#B2DFDB"));
+            a2.setBackgroundResource(android.R.drawable.btn_default);
+            a2_pressed=!a2_pressed;
         }
     }
 
-    public void on_a3(View view){
-        if(!a3_pressed){
+    public void on_a3(View view)
+    {
+        if(!a3_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
  //           mp.release();
             //change color
-            a3.setBackgroundColor(Color.parseColor("#26A69A"));
+            a3.setBackgroundColor(Color.parseColor("#1565C0"));
             a3_pressed = true;
         }
-        else{
-            //a3.setBackgroundColor(Color.parseColor("#B2DFDB"));
+        else
+        {
+            a3.setBackgroundResource(android.R.drawable.btn_default);
+            a3_pressed=!a3_pressed;
         }
     }
-    public void on_a4(View view){
-        if(!a4_pressed){
+    public void on_a4(View view)
+    {
+        if(!a4_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             mp.start();
    //         mp.release();
             //change color
-            a4.setBackgroundColor(Color.parseColor("#009688"));
+            a4.setBackgroundColor(Color.parseColor("#1565C0"));
             a4_pressed = true;
 
         }
-        else{
+        else
+        {
            // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
+            a4.setBackgroundResource(android.R.drawable.btn_default);
+            a4_pressed=!a4_pressed;
         }
     }
-    public void on_b1(View view){
-        if(!b1_pressed){
+    public void on_b1(View view)
+    {
+        if(!b1_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
-
+            b1.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b1_pressed=!b1_pressed;
         }
-        else{
-
+        else
+        {
+            b1.setBackgroundResource(android.R.drawable.btn_default);
+            b1_pressed=!b1_pressed;
         }
     }
-    public void on_b2(View view){
-        if(!b2_pressed){
+    public void on_b2(View view)
+    {
+        if(!b2_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
-
+            b2.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b2_pressed=!b2_pressed;
         }
-        else{
-
+        else
+        {
+            b2.setBackgroundResource(android.R.drawable.btn_default);
+            b2_pressed=!b2_pressed;
         }
     }
-    public void on_b3(View view){
-        if(!b3_pressed){
+    public void on_b3(View view)
+    {
+        if(!b3_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
-
+            b3.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b3_pressed=!b3_pressed;
         }
-        else{
-
+        else
+        {
+            b3.setBackgroundResource(android.R.drawable.btn_default);
+            b3_pressed=!b3_pressed;
         }
     }
-    public void on_b4(View view){
-        if(!b4_pressed){
+    public void on_b4(View view)
+    {
+        if(!b4_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             mp.start();
-            b4.setBackgroundColor(Color.parseColor("#009688"));
+            b4.setBackgroundColor(Color.parseColor("#1E88E5"));
             b4_pressed = true;
 
         }
-        else{
-
+        else
+        {
+            b4.setBackgroundResource(android.R.drawable.btn_default);
+            b4_pressed=!b4_pressed;
         }
     }
-    public void on_c1(View view){
-        if(!c1_pressed){
+    public void on_c1(View view)
+    {
+        if(!c1_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
-
-
+            c1.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c1_pressed=!c1_pressed;
         }
-        else{
-
+        else
+        {
+            c1.setBackgroundResource(android.R.drawable.btn_default);
+            c1_pressed=!c1_pressed;
         }
     }
-    public void on_c2(View view){
-        if(!c2_pressed){
+    public void on_c2(View view)
+    {
+        if(!c2_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
-
-
+            c2.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c2_pressed=!c2_pressed;
         }
-        else{
-
+        else
+        {
+            c2.setBackgroundResource(android.R.drawable.btn_default);
+            c2_pressed=!c2_pressed;
         }
     }
-    public void on_c3(View view){
-        if(!c3_pressed){
+    public void on_c3(View view)
+    {
+        if(!c3_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
-
-
+            c3.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c3_pressed=!c3_pressed;
         }
-        else{
-
+        else
+        {
+            c3.setBackgroundResource(android.R.drawable.btn_default);
+            c3_pressed=!c3_pressed;
         }
     }
-    public void on_c4(View view){
-        if(!c4_pressed){
+    public void on_c4(View view)
+    {
+        if(!c4_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             mp.start();
-            c4.setBackgroundColor(Color.parseColor("#009688"));
+            c4.setBackgroundColor(Color.parseColor("#42A5F5"));
             c4_pressed = true;
         }
-        else{
-
+        else
+        {
+            c4.setBackgroundResource(android.R.drawable.btn_default);
+            c4_pressed=!c4_pressed;
         }
     }
-    public void on_d1(View view){
-        if(!d1_pressed){
+    public void on_d1(View view)
+    {
+        if(!d1_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
-
+            d1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d1_pressed=!d1_pressed;
         }
-        else{
-
+        else
+        {
+            d1.setBackgroundResource(android.R.drawable.btn_default);
+            d1_pressed=!d1_pressed;
         }
     }
-    public void on_d2(View view){
-        if(!d2_pressed){
+    public void on_d2(View view)
+    {
+        if(!d2_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
-
+            d2.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d2_pressed=!d2_pressed;
         }
-        else{
-
+        else
+        {
+            d2.setBackgroundResource(android.R.drawable.btn_default);
+            d2_pressed=!d2_pressed;
         }
     }
-    public void on_d3(View view){
-        if(!d3_pressed){
+    public void on_d3(View view)
+    {
+        if(!d3_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
-
+            d3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d3_pressed=!d3_pressed;
         }
-        else{
-
+        else
+        {
+            d3.setBackgroundResource(android.R.drawable.btn_default);
+            d3_pressed=!d3_pressed;
         }
     }
 
-    public void on_d4(View view){
-        if(!d4_pressed){
+    public void on_d4(View view)
+    {
+        if(!d4_pressed)
+        {
             MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             mp.start();
-            d4.setBackgroundColor(Color.parseColor("#009688"));
+            d4.setBackgroundColor(Color.parseColor("#90CAF9"));
             d4_pressed = true;
         }
-        else{
-
+        else
+        {
+            d4.setBackgroundResource(android.R.drawable.btn_default);
+            d4_pressed=!d4_pressed;
         }
+    }
+
+    public void delete(View view)
+    {
+        numMeasures--;
+        onDestroy();
+    }
+
+    public void newMeasure(View view)
+    {
+        Intent openPlay = new Intent(Play.this,Play.class);
+        MainActivity.fragments.add(openPlay);
+        startActivity(openPlay);
     }
 
 }
