@@ -15,8 +15,6 @@ public class Play extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.damnboi);
-        mp.start();
         viewpager = (ViewPager) findViewById(R.id.pager);
         PagerAdapter p = new PagerAdapter(getSupportFragmentManager());
         viewpager.setAdapter(p);

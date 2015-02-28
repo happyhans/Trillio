@@ -1,6 +1,7 @@
 package com.hansallendorfer.test;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
@@ -14,7 +15,9 @@ public class Splash extends ActionBarActivity {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    sleep(1500);
+                    MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.damnboi);
+                    mp.start();
+                    sleep(3000);
                 }
                 catch(Exception e){
                     e.printStackTrace();
