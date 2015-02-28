@@ -71,30 +71,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
+        android:checkedButton="@+id/radioButton4"
         android:layout_centerHorizontal="true">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radio3"
-            android:id="@+id/radioButton3"
+            android:text="@string/radio4"
+            android:id="@+id/radioButton4"
             android:layout_gravity="center_horizontal" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radio3"
-            android:id="@+id/radioButton3"
+            android:text="@string/radio5"
+            android:id="@+id/radioButton5"
             android:layout_gravity="center_horizontal" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radio3"
-            android:id="@+id/radioButton3"
+            android:text="@string/radio6"
+            android:id="@+id/radioButton6"
             android:layout_gravity="center_horizontal" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/radio3"
-            android:id="@+id/radioButton3"
+            android:text="@string/radio7"
+            android:id="@+id/radioButton7"
             android:layout_gravity="center_horizontal" />
         </RadioGroup>
 
