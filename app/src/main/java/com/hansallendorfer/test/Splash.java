@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 
 public class Splash extends ActionBarActivity {
-
+    //DONE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

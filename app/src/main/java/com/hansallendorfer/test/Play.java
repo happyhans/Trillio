@@ -15,9 +15,9 @@ public class Play extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
-        viewpager = (ViewPager) findViewById(R.id.pager);
-        PagerAdapter p = new PagerAdapter(getSupportFragmentManager());
-        viewpager.setAdapter(p);
+      //viewpager = (ViewPager) findViewById(R.id.pager);
+      // PagerAdapter p = new PagerAdapter(getSupportFragmentManager());
+      // viewpager.setAdapter(p);
         //hi ankit
     }
 
