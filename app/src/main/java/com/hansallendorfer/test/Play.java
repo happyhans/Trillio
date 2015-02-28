@@ -84,6 +84,79 @@ public class Play extends ActionBarActivity {
         d2 = (Button) findViewById(R.id.d2);
         d3 = (Button) findViewById(R.id.d3);
         d4 = (Button) findViewById(R.id.d4);
+
+       final TimerTask beat1 = new TimerTask() {
+            @Override
+            public void run() {
+                if(a1_pressed){
+                    playbeep1();
+                }
+                if(a2_pressed){
+                    playbeep2();
+                }
+                if(a3_pressed){
+                    playdjsound1();
+                }
+                if(a4_pressed){
+                    playdrum1();
+                }
+            }
+        };
+
+       final TimerTask beat2 = new TimerTask() {
+            @Override
+            public void run() {
+                if(b1_pressed){
+                    playbeep1();
+                }
+                if(b2_pressed){
+                    playbeep2();
+                }
+                if(b3_pressed){
+                    playdjsound1();
+                }
+                if(b4_pressed){
+                    playdrum1();
+                }
+            }
+        };
+
+        final TimerTask beat3 = new TimerTask() {
+            @Override
+            public void run() {
+                if(c1_pressed){
+                    playbeep1();
+                }
+                if(c2_pressed){
+                    playbeep2();
+                }
+                if(c3_pressed){
+                    playdjsound1();
+                }
+                if(c4_pressed){
+                    playdrum1();
+                }
+            }
+        };
+
+       final TimerTask beat4 = new TimerTask() {
+            @Override
+            public void run() {
+                if(d1_pressed){
+                    playbeep1();
+                }
+                if(d2_pressed){
+                    playbeep2();
+                }
+                if(d3_pressed){
+                    playdjsound1();
+                }
+                if(d4_pressed){
+                    playdrum1();
+                }
+            }
+        };
+
         //   s=(Spinner)findViewById(R.id.spinner);
         //  Integer[] i=new Integer[numMeasures];
         // for (int x=0;x<MainActivity.fragments.length();x++)
@@ -93,8 +166,23 @@ public class Play extends ActionBarActivity {
         // ArrayAdapter<Integer> adapter=new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_item,i);
         //s.setAdapter(adapter);
         //s.setOnItemSelectedListener(this);
-        
+
+        Thread t = new Thread() {
+            public void run() {
+                try {
+                    Timer timer = new Timer();
+                    timer.schedule(beat1,0,4000);
+                    timer.schedule(beat2,1000,4000);
+                    timer.schedule(beat3,2000,4000);
+                    timer.schedule(beat4,3000,4000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        t.start();
     }
+
         //make methods to play each sound individually
 
     public void playbeep1() {
