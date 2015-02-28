@@ -11,19 +11,17 @@ import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
-    List<Fragment> fragments;
+    //List<Fragment> fragments;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fragments = new ArrayList<Fragment>();
-
-
+        //fragments = new ArrayList<Fragment>();
     }
 
     public void play(View view){
         Intent openPlay = new Intent(MainActivity.this,Play.class);
-        fragments.add(openPlay);
+        //fragments.add(openPlay);
         startActivity(openPlay);
     }
 

@@ -57,7 +57,7 @@ public class Play extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-      numMeasures++;
+      //numMeasures++;
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_play);
       //viewpager = (ViewPager) findViewById(R.id.pager);
@@ -80,15 +80,15 @@ public class Play extends ActionBarActivity {
          d2 = (Button) findViewById(R.id.d2);
          d3 = (Button) findViewById(R.id.d3);
          d4 = (Button) findViewById(R.id.d4);
-         s=(Spinner)findViewById(R.id.spinner);
-        Integer[] i=new Integer[numMeasures];
-        for (int x=0;x<MainActivity.fragments.length();x++)
-        {
-            i[x]=x+1;
-        }
-        ArrayAdapter<Integer> adapter=new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_item,i);
-        s.setAdapter(adapter);
-        s.setOnItemSelectedListener(this);
+      //   s=(Spinner)findViewById(R.id.spinner);
+      //  Integer[] i=new Integer[numMeasures];
+       // for (int x=0;x<MainActivity.fragments.length();x++)
+       // {
+       //     i[x]=x+1;
+       // }
+       // ArrayAdapter<Integer> adapter=new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_item,i);
+        //s.setAdapter(adapter);
+        //s.setOnItemSelectedListener(this);
 
     }
 
@@ -349,17 +349,17 @@ public class Play extends ActionBarActivity {
         }
     }
 
-    public void delete(View view)
-    {
-        numMeasures--;
-        onDestroy();
-    }
+//    public void delete(View view)
+//    {
+//        numMeasures--;
+//        onDestroy();
+//    }
 
-    public void newMeasure(View view)
-    {
-        Intent openPlay = new Intent(Play.this,Play.class);
-        MainActivity.fragments.add(openPlay);
-        startActivity(openPlay);
-    }
+//    public void newMeasure(View view)
+//    {
+//        Intent openPlay = new Intent(Play.this,Play.class);
+//        MainActivity.fragments.add(openPlay);
+//        startActivity(openPlay);
+//    }
 
 }
