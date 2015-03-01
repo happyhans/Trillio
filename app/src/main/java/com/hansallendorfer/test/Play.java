@@ -1163,7 +1163,7 @@ public class Play extends ActionBarActivity {
             g1_pressed = true;
         } else {
             g1.setBackgroundResource(android.R.drawable.btn_default);
-            g1_pressed = !e1_pressed;
+            g1_pressed = !g1_pressed;
         }
     }
 
@@ -1267,7 +1267,7 @@ public class Play extends ActionBarActivity {
             h2_pressed = true;
         } else {
             h2.setBackgroundResource(android.R.drawable.btn_default);
-            h2_pressed = !e2_pressed;
+            h2_pressed = !h2_pressed;
         }
     }
 
