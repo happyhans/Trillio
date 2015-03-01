@@ -12,6 +12,7 @@ import java.util.TimerTask;
 
 
 public class Play extends ActionBarActivity {
+
     boolean a1_pressed;
     boolean a2_pressed;
     boolean a3_pressed;
@@ -504,14 +505,14 @@ public class Play extends ActionBarActivity {
             public void run() {
                 try {
                     Timer timer = new Timer();
-                    timer.schedule(beat1,0, 3528);
-                    timer.schedule(beat2,220, 3528);
-                    timer.schedule(beat3,441, 3528);
-                    timer.schedule(beat4,661, 3528);
-                    timer.schedule(beat5,882, 3528);
-                    timer.schedule(beat6,1102, 3528);
-                    timer.schedule(beat7,1322, 3528);
-                    timer.schedule(beat8,1542, 3528);
+                    timer.schedule(beat1,0, 8000);
+                    timer.schedule(beat2,1000, 8000);
+                    timer.schedule(beat3,2000, 8000);
+                    timer.schedule(beat4,3000, 8000);
+                    timer.schedule(beat5,4000, 8000);
+                    timer.schedule(beat6,5000, 8000);
+                    timer.schedule(beat7,6000, 8000);
+                    timer.schedule(beat8,7000, 8000);
 //                    if(bpm == 0){
 //                        timer.schedule(beat1,0, 1764);
 //                        timer.schedule(beat2,441, 1764);
@@ -705,7 +706,7 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             //         mp.release();
             //change color
-            a5.setBackgroundColor(Color.parseColor("#4C8F50"));
+            a5.setBackgroundColor(Color.parseColor("#4CAF50"));
             a5_pressed = true;
 
         } else {
@@ -948,7 +949,6 @@ public class Play extends ActionBarActivity {
             c8_pressed = !c8_pressed;
         }
     }
-
 
     public void on_d1(View view) {
         if (!d1_pressed) {
