@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.media.AudioManager;
 import android.widget.Spinner;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -340,6 +343,545 @@ public class Play extends ActionBarActivity {
         final int sound7 = sp7.load(this,R.raw.synth,1);
         final int sound8 = sp8.load(this,R.raw.synth2,1);
 
+        firebase.child("a1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("a8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                a8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+        firebase.child("b1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("b8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                b8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("c1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("c8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                c8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("d1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("d8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                d8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("e1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("e8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                e8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("f1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("f8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                f8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("g1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("g8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                g8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
+
+
+
+        firebase.child("h1").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h1_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h2").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h2_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h3").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h3_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h4").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h4_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h5").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h5_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h6").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h6_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h7").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h7_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+        firebase.child("h8").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                h8_pressed = (boolean)snapshot.getValue();
+            }
+            @Override public void onCancelled(FirebaseError error) { }
+        });
+
+
         final TimerTask beat1 = new TimerTask() {
             @Override
             public void run() {
@@ -624,9 +1166,6 @@ public class Play extends ActionBarActivity {
                         timer.schedule(beat7,1956, 2608);
                         timer.schedule(beat8,2282, 2608);
                     }
-
-
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
