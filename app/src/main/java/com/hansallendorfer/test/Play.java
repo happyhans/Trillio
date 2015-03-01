@@ -2,10 +2,12 @@ package com.hansallendorfer.test;
 
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.media.AudioManager;
 import android.widget.Spinner;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -158,9 +160,16 @@ public class Play extends ActionBarActivity {
     Button h8;
 
     //Spinner s;
+    SoundPool sp1 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp2 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp3 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp4 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp5 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp6 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp7 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+    SoundPool sp8 = new SoundPool(1,AudioManager.STREAM_MUSIC,0);
 
-    MediaPlayer mp;
-
+    //  MediaPlayer mp;
 
     static int numMeasures = 0;
 //    MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
@@ -170,6 +179,7 @@ public class Play extends ActionBarActivity {
         //numMeasures++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
 
 //        Intent intent = getIntent();
 //        final int beats = intent.getIntExtra("radio1option",0);
@@ -251,32 +261,49 @@ public class Play extends ActionBarActivity {
         h7 = (Button) findViewById(R.id.h7);
         h8 = (Button) findViewById(R.id.h8);
 
+        final int sound1 = sp1.load(this,R.raw.ayy,1);
+        final int sound2 = sp2.load(this,R.raw.basskick,1);
+        final int sound3 = sp3.load(this,R.raw.clap,1);
+        final int sound4 = sp4.load(this,R.raw.gunclick,1);
+        final int sound5 = sp5.load(this,R.raw.quietsynth,1);
+        final int sound6 = sp6.load(this,R.raw.snare,1);
+        final int sound7 = sp7.load(this,R.raw.synth,1);
+        final int sound8 = sp8.load(this,R.raw.synth2,1);
+
         final TimerTask beat1 = new TimerTask() {
             @Override
             public void run() {
                 if(a1_pressed){
-                    playsound1();
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(a2_pressed){
-                    playsound1();
+                if(b1_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(a3_pressed){
-                    playsound1();
+                if(c1_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(a4_pressed){
-                    playsound1();
+                if(d1_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(a5_pressed){
-                    playsound1();
+                if(e1_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(a6_pressed){
-                    playsound1();
+                if(f1_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(a7_pressed){
-                   playsound1();
+                if(g1_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(a8_pressed){
-                   playsound1();
+                if(h1_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -284,29 +311,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat2 = new TimerTask() {
             @Override
             public void run() {
-                if(b1_pressed){
-                    playsound2();
+                if(a2_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
                 if(b2_pressed){
-                    playsound2();
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(b3_pressed){
-                    playsound2();
+                if(c2_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(b4_pressed){
-                    playsound2();
+                if(d2_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(b5_pressed){
-                    playsound2();
+                if(e2_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(b6_pressed){
-                    playsound2();
+                if(f2_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(b7_pressed){
-                    playsound2();
+                if(g2_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(b8_pressed){
-                    playsound2();
+                if(h2_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -314,29 +349,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat3 = new TimerTask() {
             @Override
             public void run() {
-                if(c1_pressed){
-                    playsound3();
+                if(a3_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(c2_pressed){
-                    playsound3();
+                if(b3_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
                 if(c3_pressed){
-                    playsound3();
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(c4_pressed){
-                    playsound3();
+                if(d3_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(c5_pressed){
-                    playsound3();
+                if(e3_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(c6_pressed){
-                    playsound3();
+                if(f3_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(c7_pressed){
-                    playsound3();
+                if(g3_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(c8_pressed){
-                    playsound3();
+                if(h3_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -344,29 +387,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat4 = new TimerTask() {
             @Override
             public void run() {
-                if(d1_pressed){
-                    playsound4();
+                if(a4_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(d2_pressed){
-                    playsound4();
+                if(b4_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(d3_pressed){
-                    playsound4();
+                if(c4_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
                 if(d4_pressed){
-                    playsound4();
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(d5_pressed){
-                    playsound4();
+                if(e4_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(d6_pressed){
-                    playsound4();
+                if(f4_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(d7_pressed){
-                    playsound4();
+                if(g4_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(d8_pressed){
-                    playsound4();
+                if(h4_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -374,29 +425,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat5 = new TimerTask() {
             @Override
             public void run() {
-                if(e1_pressed){
-                    playsound5();
+                if(a5_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(e2_pressed){
-                    playsound5();
+                if(b5_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(e3_pressed){
-                    playsound5();
+                if(c5_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(e4_pressed){
-                    playsound5();
+                if(d5_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
                 if(e5_pressed){
-                    playsound5();
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(e6_pressed){
-                    playsound5();
+                if(f5_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(e7_pressed){
-                    playsound5();
+                if(g5_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(e8_pressed){
-                    playsound5();
+                if(h5_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -404,29 +463,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat6 = new TimerTask() {
             @Override
             public void run() {
-                if(f1_pressed){
-                    playsound6();
+                if(a6_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(f2_pressed){
-                    playsound6();
+                if(b6_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(f3_pressed){
-                    playsound6();
+                if(c6_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(f4_pressed){
-                    playsound6();
+                if(d6_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(f5_pressed){
-                    playsound6();
+                if(e6_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
                 if(f6_pressed){
-                    playsound6();
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(f7_pressed){
-                    playsound6();
+                if(g6_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(f8_pressed){
-                    playsound6();
+                if(h6_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -434,29 +501,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat7 = new TimerTask() {
             @Override
             public void run() {
-                if(g1_pressed){
-                    playsound7();
+                if(a7_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(g2_pressed){
-                    playsound7();
+                if(b7_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(g3_pressed){
-                    playsound7();
+                if(c7_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(g4_pressed){
-                    playsound7();
+                if(d7_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(g5_pressed){
-                    playsound7();
+                if(e7_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(g6_pressed){
-                    playsound7();
+                if(f7_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
                 if(g7_pressed){
-                    playsound7();
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
-                if(g8_pressed){
-                    playsound7();
+                if(h7_pressed){
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -464,29 +539,37 @@ public class Play extends ActionBarActivity {
         final TimerTask beat8 = new TimerTask() {
             @Override
             public void run() {
-                if(h1_pressed){
-                    playsound8();
+                if(a8_pressed){
+                    // playsound1();
+                    sp1.play(sound1,0.5f,0.5f,1,0,1);
                 }
-                if(h2_pressed){
-                    playsound8();
+                if(b8_pressed){
+                    // playsound1();
+                    sp2.play(sound2,0.5f,0.5f,1,0,1);
                 }
-                if(h3_pressed){
-                    playsound8();
+                if(c8_pressed){
+                    //   playsound1();
+                    sp3.play(sound3,0.5f,0.5f,1,0,1);
                 }
-                if(h4_pressed){
-                    playsound8();
+                if(d8_pressed){
+                    //   playsound1();
+                    sp4.play(sound4,0.5f,0.5f,1,0,1);
                 }
-                if(h5_pressed){
-                    playsound8();
+                if(e8_pressed){
+                    //   playsound1();
+                    sp5.play(sound5,0.5f,0.5f,1,0,1);
                 }
-                if(h6_pressed){
-                    playsound8();
+                if(f8_pressed){
+                    //   playsound1();
+                    sp6.play(sound6,0.5f,0.5f,1,0,1);
                 }
-                if(h7_pressed){
-                    playsound8();
+                if(g8_pressed){
+                    //  playsound1();
+                    sp7.play(sound7,0.5f,0.5f,1,0,1);
                 }
                 if(h8_pressed){
-                    playsound8();
+                    //   playsound1();
+                    sp8.play(sound8,0.5f,0.5f,1,0,1);
                 }
             }
         };
@@ -505,14 +588,14 @@ public class Play extends ActionBarActivity {
             public void run() {
                 try {
                     Timer timer = new Timer();
-                    timer.schedule(beat1,0, 8000);
-                    timer.schedule(beat2,1000, 8000);
-                    timer.schedule(beat3,2000, 8000);
-                    timer.schedule(beat4,3000, 8000);
-                    timer.schedule(beat5,4000, 8000);
-                    timer.schedule(beat6,5000, 8000);
-                    timer.schedule(beat7,6000, 8000);
-                    timer.schedule(beat8,7000, 8000);
+                    timer.schedule(beat1,0, 1760);
+                    timer.schedule(beat2,220, 1760);
+                    timer.schedule(beat3,440, 1760);
+                    timer.schedule(beat4,660, 1760);
+                    timer.schedule(beat5,880, 1760);
+                    timer.schedule(beat6,1100, 1760);
+                    timer.schedule(beat7,1320, 1760);
+                    timer.schedule(beat8,1540, 1760);
 //                    if(bpm == 0){
 //                        timer.schedule(beat1,0, 1764);
 //                        timer.schedule(beat2,441, 1764);
@@ -551,93 +634,104 @@ public class Play extends ActionBarActivity {
 
     //make methods to play each sound individually
 
-    public void playsound1() {
-        mp = MediaPlayer.create(Play.this, R.raw.clap);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound2() {
-        mp = MediaPlayer.create(Play.this, R.raw.ayy);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound3() {
-        mp = MediaPlayer.create(Play.this, R.raw.basskick);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound4() {
-        mp = MediaPlayer.create(Play.this, R.raw.clap);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound5() {
-        mp = MediaPlayer.create(Play.this, R.raw.gunclick);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound6() {
-        mp = MediaPlayer.create(Play.this, R.raw.quietsynth);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound7() {
-        mp = MediaPlayer.create(Play.this, R.raw.snare);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
-
-    public void playsound8() {
-        mp = MediaPlayer.create(Play.this, R.raw.synth);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-        mp.start();
-    }
+//    public void playsound1() {
+//        mp = MediaPlayer.create(Play.this, R.raw.clap);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//            //    mp.reset();
+//            }
+//        });
+//        mp.start();
+//
+//    }
+//
+//    public void playsound2() {
+//        mp = MediaPlayer.create(Play.this, R.raw.ayy);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//             //   mp.reset();
+//            }
+//        });
+//        mp.start();
+//
+//    }
+//
+//    public void playsound3() {
+//        mp = MediaPlayer.create(Play.this, R.raw.basskick);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//              //  mp.reset();
+//            }
+//        });
+//        mp.start();
+//
+//    }
+//
+//    public void playsound4() {
+//        mp = MediaPlayer.create(Play.this, R.raw.clap);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//              //  mp.reset();
+//            }
+//        });
+//        mp.start();
+//    }
+//
+//    public void playsound5() {
+//        mp = MediaPlayer.create(Play.this, R.raw.gunclick);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//              //  mp.reset();
+//            }
+//        });
+//        mp.start();
+//    }
+//
+//    public void playsound6() {
+//        mp = MediaPlayer.create(Play.this, R.raw.quietsynth);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//               // mp.reset();
+//            }
+//        });
+//        mp.start();
+//    }
+//
+//    public void playsound7() {
+//        mp = MediaPlayer.create(Play.this, R.raw.snare);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//               // mp.reset();
+//            }
+//        });
+//        mp.start();
+//    }
+//
+//    public void playsound8() {
+//        mp = MediaPlayer.create(Play.this, R.raw.synth);
+//        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//            @Override
+//            public void onCompletion(MediaPlayer mp) {
+//                mp.release();
+//                //mp.reset();
+//            }
+//        });
+//        mp.start();
+//    }
 
     public void on_a1(View view) {
         if (!a1_pressed) {
