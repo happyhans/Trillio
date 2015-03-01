@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 
-public class Splash extends ActionBarActivity {
+public class Trillio extends ActionBarActivity {
     //DONE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class Splash extends ActionBarActivity {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    MediaPlayer mp = MediaPlayer.create(Splash.this,R.raw.damnboi);
+                    MediaPlayer mp = MediaPlayer.create(Trillio.this,R.raw.damnboi);
                     mp.start();
                     sleep(3000);
                 }
@@ -23,7 +23,7 @@ public class Splash extends ActionBarActivity {
                     e.printStackTrace();
                 }
                 finally{
-                   Intent openMainActivity = new Intent(Splash.this, MainActivity.class);
+                   Intent openMainActivity = new Intent(Trillio.this, MainActivity.class);
                    startActivity(openMainActivity);
                 }
             }
