@@ -347,6 +347,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a1_pressed = (Boolean)snapshot.getValue();
+                if(a1_pressed){
+                    a1.setBackgroundColor(Color.parseColor("#C8E6C9"));
+                }else{
+                    a1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -355,6 +360,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a2_pressed = (Boolean)snapshot.getValue();
+                if(a2_pressed){
+                    a2.setBackgroundColor(Color.parseColor("#A5D6A7"));
+                }else{
+                    a2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -362,7 +372,12 @@ public class Play extends ActionBarActivity {
         firebase.child("a3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a3_pressed = (Boolean)snapshot.getValue();
+                a3_pressed = (Boolean) snapshot.getValue();
+                if(a3_pressed){
+                    a3.setBackgroundColor(Color.parseColor("#81C784"));
+                }else{
+                    a3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -371,6 +386,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a4_pressed = (Boolean)snapshot.getValue();
+                if(a4_pressed){
+                    a4.setBackgroundColor(Color.parseColor("#66BB6A"));
+                }else{
+                    a4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -379,6 +399,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a5_pressed = (Boolean)snapshot.getValue();
+                if(a5_pressed){
+                    a5.setBackgroundColor(Color.parseColor("#4CAF50"));
+                }else{
+                    a5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -387,6 +412,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a6_pressed = (Boolean)snapshot.getValue();
+                if(a6_pressed){
+                    a6.setBackgroundColor(Color.parseColor("#43A047"));
+                }else{
+                    a6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -395,6 +425,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a7_pressed = (Boolean)snapshot.getValue();
+                if(a7_pressed){
+                    a7.setBackgroundColor(Color.parseColor("#388E3C"));
+                }else{
+                    a7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -403,6 +438,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 a8_pressed = (Boolean)snapshot.getValue();
+                if(a8_pressed){
+                    a8.setBackgroundColor(Color.parseColor("#2E7D32"));
+                }else{
+                    a8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -413,6 +453,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b1_pressed = (Boolean)snapshot.getValue();
+                if(b1_pressed){
+                    b1.setBackgroundColor(Color.parseColor("#B2DFDB"));
+                }else{
+                    b1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -421,6 +466,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b2_pressed = (Boolean)snapshot.getValue();
+                if(b2_pressed){
+                    b2.setBackgroundColor(Color.parseColor("#80CBC4"));
+                }else{
+                    b2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -429,6 +479,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b3_pressed = (Boolean)snapshot.getValue();
+                if(b3_pressed){
+                    b3.setBackgroundColor(Color.parseColor("#4DB6AC"));
+                }else{
+                    b3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -437,6 +492,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b4_pressed = (Boolean)snapshot.getValue();
+                if(b4_pressed){
+                    b4.setBackgroundColor(Color.parseColor("#26A69A"));
+                }else{
+                    b4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -445,6 +505,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b5_pressed = (Boolean)snapshot.getValue();
+                if(b5_pressed){
+                    b5.setBackgroundColor(Color.parseColor("#009688"));
+                }else{
+                    b5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -453,6 +518,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b6_pressed = (Boolean)snapshot.getValue();
+                if(b6_pressed){
+                    b6.setBackgroundColor(Color.parseColor("#00897B"));
+                }else{
+                    b6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -461,6 +531,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b7_pressed = (Boolean)snapshot.getValue();
+                if(b7_pressed){
+                    b7.setBackgroundColor(Color.parseColor("#00796B"));
+                }else{
+                    b7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -469,6 +544,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 b8_pressed = (Boolean)snapshot.getValue();
+                if(b8_pressed){
+                    b8.setBackgroundColor(Color.parseColor("#00695C"));
+                }else{
+                    b8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -481,6 +561,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c1_pressed = (Boolean)snapshot.getValue();
+                if(c1_pressed){
+                    c1.setBackgroundColor(Color.parseColor("#B2EBF2"));
+                }else{
+                    c1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -489,6 +574,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c2_pressed = (Boolean)snapshot.getValue();
+                if(c2_pressed){
+                    c2.setBackgroundColor(Color.parseColor("#80DEEA"));
+                }else{
+                    c2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -497,6 +587,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c3_pressed = (Boolean)snapshot.getValue();
+                if(c3_pressed){
+                    c3.setBackgroundColor(Color.parseColor("#4DD0E1"));
+                }else{
+                    c3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -505,6 +600,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c4_pressed = (Boolean)snapshot.getValue();
+                if(c4_pressed){
+                    c4.setBackgroundColor(Color.parseColor("#26C6D8"));
+                }else{
+                    c4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -513,6 +613,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c5_pressed = (Boolean)snapshot.getValue();
+                if(c5_pressed){
+                    c5.setBackgroundColor(Color.parseColor("#00BCD4"));
+                }else{
+                    c5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -521,6 +626,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c6_pressed = (Boolean)snapshot.getValue();
+                if(c6_pressed){
+                    c6.setBackgroundColor(Color.parseColor("#00ACC1"));
+                }else{
+                    c6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -529,6 +639,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c7_pressed = (Boolean)snapshot.getValue();
+                if(c7_pressed){
+                    c7.setBackgroundColor(Color.parseColor("#0097A7"));
+                }else{
+                    c7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -537,6 +652,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 c8_pressed = (Boolean)snapshot.getValue();
+                if(c8_pressed){
+                    c8.setBackgroundColor(Color.parseColor("#00838F"));
+                }else{
+                    c8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -549,6 +669,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d1_pressed = (Boolean)snapshot.getValue();
+                if(d1_pressed){
+                    d1.setBackgroundColor(Color.parseColor("#B3E5FC"));
+                }else{
+                    d1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -557,6 +682,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d2_pressed = (Boolean)snapshot.getValue();
+                if(d2_pressed){
+                    d2.setBackgroundColor(Color.parseColor("#81D4FA"));
+                }else{
+                    d2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -565,6 +695,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d3_pressed = (Boolean)snapshot.getValue();
+                if(d3_pressed){
+                    d3.setBackgroundColor(Color.parseColor("#4FC3F7"));
+                }else{
+                    d3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -573,6 +708,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d4_pressed = (Boolean)snapshot.getValue();
+                if(d4_pressed){
+                    d4.setBackgroundColor(Color.parseColor("#29B6F6"));
+                }else{
+                    d4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -581,6 +721,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d5_pressed = (Boolean)snapshot.getValue();
+                if(d5_pressed){
+                    d5.setBackgroundColor(Color.parseColor("#03A9F4"));
+                }else{
+                    d5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -589,6 +734,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d6_pressed = (Boolean)snapshot.getValue();
+                if(d6_pressed){
+                    d6.setBackgroundColor(Color.parseColor("#039BE5"));
+                }else{
+                    d6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -597,6 +747,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d7_pressed = (Boolean)snapshot.getValue();
+                if(d7_pressed){
+                    d7.setBackgroundColor(Color.parseColor("#0288D1"));
+                }else{
+                    d7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -605,6 +760,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 d8_pressed = (Boolean)snapshot.getValue();
+                if(d8_pressed){
+                    d8.setBackgroundColor(Color.parseColor("#0277BD"));
+                }else{
+                    d8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -617,6 +777,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e1_pressed = (Boolean)snapshot.getValue();
+                if(e1_pressed){
+                    e1.setBackgroundColor(Color.parseColor("#BBDEFB"));
+                }else{
+                    e1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -625,6 +790,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e2_pressed = (Boolean)snapshot.getValue();
+                if(e2_pressed){
+                    e2.setBackgroundColor(Color.parseColor("#90CAF9"));
+                }else{
+                    e2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -633,6 +803,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e3_pressed = (Boolean)snapshot.getValue();
+                if(e3_pressed){
+                    e3.setBackgroundColor(Color.parseColor("#64B5F6"));
+                }else{
+                    e3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -641,6 +816,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e4_pressed = (Boolean)snapshot.getValue();
+                if(e4_pressed){
+                    e4.setBackgroundColor(Color.parseColor("#42A5F5"));
+                }else{
+                    e4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -649,6 +829,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e5_pressed = (Boolean)snapshot.getValue();
+                if(e5_pressed){
+                    e5.setBackgroundColor(Color.parseColor("#2196F3"));
+                }else{
+                    e5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -657,6 +842,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e6_pressed = (Boolean)snapshot.getValue();
+                if(e6_pressed){
+                    e6.setBackgroundColor(Color.parseColor("#1E88E5"));
+                }else{
+                    e6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -665,6 +855,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e7_pressed = (Boolean)snapshot.getValue();
+                if(e7_pressed){
+                    e7.setBackgroundColor(Color.parseColor("#1976D2"));
+                }else{
+                    e7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -673,6 +868,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 e8_pressed = (Boolean)snapshot.getValue();
+                if(e8_pressed){
+                    e8.setBackgroundColor(Color.parseColor("#1565C0"));
+                }else{
+                    e8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -685,6 +885,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f1_pressed = (Boolean)snapshot.getValue();
+                if(f1_pressed){
+                    f1.setBackgroundColor(Color.parseColor("#C5CAE9"));
+                }else{
+                    f1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -693,6 +898,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f2_pressed = (Boolean)snapshot.getValue();
+                if(f2_pressed){
+                    f2.setBackgroundColor(Color.parseColor("#9FA8DA"));
+                }else{
+                    f2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -701,6 +911,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f3_pressed = (Boolean)snapshot.getValue();
+                if(f3_pressed){
+                    f3.setBackgroundColor(Color.parseColor("#7986CB"));
+                }else{
+                    f3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -709,6 +924,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f4_pressed = (Boolean)snapshot.getValue();
+                if(f4_pressed){
+                    f4.setBackgroundColor(Color.parseColor("#5C6BC0"));
+                }else{
+                    f4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -717,6 +937,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f5_pressed = (Boolean)snapshot.getValue();
+                if(f5_pressed){
+                    f5.setBackgroundColor(Color.parseColor("#3F51B5"));
+                }else{
+                    f5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -725,6 +950,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f6_pressed = (Boolean)snapshot.getValue();
+                if(f6_pressed){
+                    f6.setBackgroundColor(Color.parseColor("#3949AB"));
+                }else{
+                    f6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -733,6 +963,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f7_pressed = (Boolean)snapshot.getValue();
+                if(f7_pressed){
+                    f7.setBackgroundColor(Color.parseColor("#303F9F"));
+                }else{
+                    f7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -741,6 +976,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 f8_pressed = (Boolean)snapshot.getValue();
+                if(f8_pressed){
+                    f8.setBackgroundColor(Color.parseColor("#283593"));
+                }else{
+                    f8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -753,6 +993,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g1_pressed = (Boolean)snapshot.getValue();
+                if(g1_pressed){
+                    g1.setBackgroundColor(Color.parseColor("#D1C4E9"));
+                }else{
+                    g1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -761,6 +1006,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g2_pressed = (Boolean)snapshot.getValue();
+                if(g2_pressed){
+                    g2.setBackgroundColor(Color.parseColor("#B39DDB"));
+                }else{
+                    g2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -769,6 +1019,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g3_pressed = (Boolean)snapshot.getValue();
+                if(g3_pressed){
+                    g3.setBackgroundColor(Color.parseColor("#9575CD"));
+                }else{
+                    g3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -777,6 +1032,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g4_pressed = (Boolean)snapshot.getValue();
+                if(g4_pressed){
+                    g4.setBackgroundColor(Color.parseColor("#7E57C2"));
+                }else{
+                    g4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -785,6 +1045,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g5_pressed = (Boolean)snapshot.getValue();
+                if(g5_pressed){
+                    g5.setBackgroundColor(Color.parseColor("#673AB7"));
+                }else{
+                    g5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -793,6 +1058,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g6_pressed = (Boolean)snapshot.getValue();
+                if(g6_pressed){
+                    g6.setBackgroundColor(Color.parseColor("#5E35B1"));
+                }else{
+                    g6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -801,6 +1071,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g7_pressed = (Boolean)snapshot.getValue();
+                if(g7_pressed){
+                    g7.setBackgroundColor(Color.parseColor("#512DA8"));
+                }else{
+                    g7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -809,18 +1084,24 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 g8_pressed = (Boolean)snapshot.getValue();
+                if(g8_pressed){
+                    g8.setBackgroundColor(Color.parseColor("#4527A0"));
+                }else{
+                    g8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
-
-
-
-
 
         firebase.child("h1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h1_pressed = (Boolean)snapshot.getValue();
+                if(h1_pressed){
+                    h1.setBackgroundColor(Color.parseColor("#E1BEE7"));
+                }else{
+                    h1.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -829,6 +1110,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h2_pressed = (Boolean)snapshot.getValue();
+                if(h2_pressed){
+                    h2.setBackgroundColor(Color.parseColor("#CE93D8"));
+                }else{
+                    h2.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -837,6 +1123,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h3_pressed = (Boolean)snapshot.getValue();
+                if(h3_pressed){
+                    h3.setBackgroundColor(Color.parseColor("#BA68C8"));
+                }else{
+                    h3.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -845,6 +1136,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h4_pressed = (Boolean)snapshot.getValue();
+                if(h4_pressed){
+                    h4.setBackgroundColor(Color.parseColor("#AB47BC"));
+                }else{
+                    h4.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -853,6 +1149,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h5_pressed = (Boolean)snapshot.getValue();
+                if(h5_pressed){
+                    h5.setBackgroundColor(Color.parseColor("#9C27B0"));
+                }else{
+                    h5.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -861,6 +1162,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h6_pressed = (Boolean)snapshot.getValue();
+                if(h6_pressed){
+                    h6.setBackgroundColor(Color.parseColor("#8E24AA"));
+                }else{
+                    h6.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -869,6 +1175,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h7_pressed = (Boolean) snapshot.getValue();
+                if(h7_pressed){
+                    h7.setBackgroundColor(Color.parseColor("#7B1FA2"));
+                }else{
+                    h7.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -877,6 +1188,11 @@ public class Play extends ActionBarActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 h8_pressed = (Boolean)snapshot.getValue();
+                if(h8_pressed){
+                    h8.setBackgroundColor(Color.parseColor("#6A1B9A"));
+                }else{
+                    h8.setBackgroundResource(android.R.drawable.btn_default);
+                }
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
