@@ -346,7 +346,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a1_pressed = (boolean)snapshot.getValue();
+                a1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -354,7 +354,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a2_pressed = (boolean)snapshot.getValue();
+                a2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -362,7 +362,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a3_pressed = (boolean)snapshot.getValue();
+                a3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -370,7 +370,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a4_pressed = (boolean)snapshot.getValue();
+                a4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -378,7 +378,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a5_pressed = (boolean)snapshot.getValue();
+                a5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -386,7 +386,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a6_pressed = (boolean)snapshot.getValue();
+                a6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -394,7 +394,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a7_pressed = (boolean)snapshot.getValue();
+                a7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -402,7 +402,7 @@ public class Play extends ActionBarActivity {
         firebase.child("a8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                a8_pressed = (boolean)snapshot.getValue();
+                a8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -412,7 +412,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b1_pressed = (boolean)snapshot.getValue();
+                b1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -420,7 +420,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b2_pressed = (boolean)snapshot.getValue();
+                b2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -428,7 +428,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b3_pressed = (boolean)snapshot.getValue();
+                b3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -436,7 +436,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b4_pressed = (boolean)snapshot.getValue();
+                b4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -444,7 +444,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b5_pressed = (boolean)snapshot.getValue();
+                b5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -452,7 +452,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b6_pressed = (boolean)snapshot.getValue();
+                b6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -460,7 +460,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b7_pressed = (boolean)snapshot.getValue();
+                b7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -468,7 +468,7 @@ public class Play extends ActionBarActivity {
         firebase.child("b8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                b8_pressed = (boolean)snapshot.getValue();
+                b8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -480,7 +480,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c1_pressed = (boolean)snapshot.getValue();
+                c1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -488,7 +488,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c2_pressed = (boolean)snapshot.getValue();
+                c2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -496,7 +496,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c3_pressed = (boolean)snapshot.getValue();
+                c3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -504,7 +504,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c4_pressed = (boolean)snapshot.getValue();
+                c4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -512,7 +512,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c5_pressed = (boolean)snapshot.getValue();
+                c5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -520,7 +520,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c6_pressed = (boolean)snapshot.getValue();
+                c6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -528,7 +528,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c7_pressed = (boolean)snapshot.getValue();
+                c7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -536,7 +536,7 @@ public class Play extends ActionBarActivity {
         firebase.child("c8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                c8_pressed = (boolean)snapshot.getValue();
+                c8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -548,7 +548,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d1_pressed = (boolean)snapshot.getValue();
+                d1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -556,7 +556,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d2_pressed = (boolean)snapshot.getValue();
+                d2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -564,7 +564,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d3_pressed = (boolean)snapshot.getValue();
+                d3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -572,7 +572,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d4_pressed = (boolean)snapshot.getValue();
+                d4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -580,7 +580,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d5_pressed = (boolean)snapshot.getValue();
+                d5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -588,7 +588,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d6_pressed = (boolean)snapshot.getValue();
+                d6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -596,7 +596,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d7_pressed = (boolean)snapshot.getValue();
+                d7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -604,7 +604,7 @@ public class Play extends ActionBarActivity {
         firebase.child("d8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                d8_pressed = (boolean)snapshot.getValue();
+                d8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -616,7 +616,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e1_pressed = (boolean)snapshot.getValue();
+                e1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -624,7 +624,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e2_pressed = (boolean)snapshot.getValue();
+                e2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -632,7 +632,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e3_pressed = (boolean)snapshot.getValue();
+                e3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -640,7 +640,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e4_pressed = (boolean)snapshot.getValue();
+                e4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -648,7 +648,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e5_pressed = (boolean)snapshot.getValue();
+                e5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -656,7 +656,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e6_pressed = (boolean)snapshot.getValue();
+                e6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -664,7 +664,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e7_pressed = (boolean)snapshot.getValue();
+                e7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -672,7 +672,7 @@ public class Play extends ActionBarActivity {
         firebase.child("e8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                e8_pressed = (boolean)snapshot.getValue();
+                e8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -684,7 +684,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f1_pressed = (boolean)snapshot.getValue();
+                f1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -692,7 +692,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f2_pressed = (boolean)snapshot.getValue();
+                f2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -700,7 +700,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f3_pressed = (boolean)snapshot.getValue();
+                f3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -708,7 +708,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f4_pressed = (boolean)snapshot.getValue();
+                f4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -716,7 +716,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f5_pressed = (boolean)snapshot.getValue();
+                f5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -724,7 +724,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f6_pressed = (boolean)snapshot.getValue();
+                f6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -732,7 +732,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f7_pressed = (boolean)snapshot.getValue();
+                f7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -740,7 +740,7 @@ public class Play extends ActionBarActivity {
         firebase.child("f8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                f8_pressed = (boolean)snapshot.getValue();
+                f8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -752,7 +752,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g1_pressed = (boolean)snapshot.getValue();
+                g1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -760,7 +760,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g2_pressed = (boolean)snapshot.getValue();
+                g2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -768,7 +768,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g3_pressed = (boolean)snapshot.getValue();
+                g3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -776,7 +776,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g4_pressed = (boolean)snapshot.getValue();
+                g4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -784,7 +784,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g5_pressed = (boolean)snapshot.getValue();
+                g5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -792,7 +792,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g6_pressed = (boolean)snapshot.getValue();
+                g6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -800,7 +800,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g7_pressed = (boolean)snapshot.getValue();
+                g7_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -808,7 +808,7 @@ public class Play extends ActionBarActivity {
         firebase.child("g8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                g8_pressed = (boolean)snapshot.getValue();
+                g8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -820,7 +820,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h1_pressed = (boolean)snapshot.getValue();
+                h1_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -828,7 +828,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h2_pressed = (boolean)snapshot.getValue();
+                h2_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -836,7 +836,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h3").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h3_pressed = (boolean)snapshot.getValue();
+                h3_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -844,7 +844,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h4").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h4_pressed = (boolean)snapshot.getValue();
+                h4_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -852,7 +852,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h5").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h5_pressed = (boolean)snapshot.getValue();
+                h5_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -860,7 +860,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h6").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h6_pressed = (boolean)snapshot.getValue();
+                h6_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -868,7 +868,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h7").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h7_pressed = (boolean)snapshot.getValue();
+                h7_pressed = (Boolean) snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
@@ -876,7 +876,7 @@ public class Play extends ActionBarActivity {
         firebase.child("h8").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                h8_pressed = (boolean)snapshot.getValue();
+                h8_pressed = (Boolean)snapshot.getValue();
             }
             @Override public void onCancelled(FirebaseError error) { }
         });
