@@ -688,7 +688,7 @@ public class Play extends ActionBarActivity {
         if (!b1_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //   mp.start();
-            b1.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b1.setBackgroundColor(Color.parseColor("#B2DFDB"));
             b1_pressed = true;
         } else {
             b1.setBackgroundResource(android.R.drawable.btn_default);
@@ -700,7 +700,7 @@ public class Play extends ActionBarActivity {
         if (!b2_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            b2.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b2.setBackgroundColor(Color.parseColor("#80CBC4"));
             b2_pressed = true;
         } else {
             b2.setBackgroundResource(android.R.drawable.btn_default);
@@ -712,7 +712,7 @@ public class Play extends ActionBarActivity {
         if (!b3_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             // mp.start();
-            b3.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b3.setBackgroundColor(Color.parseColor("#4DB6AC"));
             b3_pressed = true;
         } else {
             b3.setBackgroundResource(android.R.drawable.btn_default);
@@ -724,7 +724,7 @@ public class Play extends ActionBarActivity {
         if (!b4_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            b4.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b4.setBackgroundColor(Color.parseColor("#26A69A"));
             b4_pressed = true;
 
         } else {
@@ -736,7 +736,7 @@ public class Play extends ActionBarActivity {
         if (!b5_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            b5.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b5.setBackgroundColor(Color.parseColor("#009688"));
             b5_pressed = true;
 
         } else {
@@ -748,7 +748,7 @@ public class Play extends ActionBarActivity {
         if (!b6_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            b6.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b6.setBackgroundColor(Color.parseColor("#00897B"));
             b6_pressed = true;
 
         } else {
@@ -760,7 +760,7 @@ public class Play extends ActionBarActivity {
         if (!b7_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            b7.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b7.setBackgroundColor(Color.parseColor("#00796B"));
             b7_pressed = true;
 
         } else {
@@ -772,7 +772,7 @@ public class Play extends ActionBarActivity {
         if (!b8_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            b8.setBackgroundColor(Color.parseColor("#1E88E5"));
+            b8.setBackgroundColor(Color.parseColor("#00695C"));
             b8_pressed = true;
 
         } else {
@@ -785,7 +785,7 @@ public class Play extends ActionBarActivity {
         if (!c1_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //  mp.start();
-            c1.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c1.setBackgroundColor(Color.parseColor("#B2EBF2"));
             c1_pressed = true;
         } else {
             c1.setBackgroundResource(android.R.drawable.btn_default);
@@ -797,7 +797,7 @@ public class Play extends ActionBarActivity {
         if (!c2_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            c2.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c2.setBackgroundColor(Color.parseColor("#80DEEA"));
             c2_pressed = true;
         } else {
             c2.setBackgroundResource(android.R.drawable.btn_default);
@@ -809,7 +809,7 @@ public class Play extends ActionBarActivity {
         if (!c3_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             // mp.start();
-            c3.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c3.setBackgroundColor(Color.parseColor("#4DD0E1"));
             c3_pressed = true;
         } else {
             c3.setBackgroundResource(android.R.drawable.btn_default);
@@ -821,7 +821,7 @@ public class Play extends ActionBarActivity {
         if (!c4_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             // mp.start();
-            c4.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c4.setBackgroundColor(Color.parseColor("#26C6D8"));
             c4_pressed = true;
         } else {
             c4.setBackgroundResource(android.R.drawable.btn_default);
@@ -832,7 +832,7 @@ public class Play extends ActionBarActivity {
         if (!c5_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             // mp.start();
-            c5.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c5.setBackgroundColor(Color.parseColor("#00BCD4"));
             c5_pressed = true;
         } else {
             c5.setBackgroundResource(android.R.drawable.btn_default);
@@ -843,7 +843,7 @@ public class Play extends ActionBarActivity {
         if (!c6_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             // mp.start();
-            c6.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c6.setBackgroundColor(Color.parseColor("#00ACC1"));
             c6_pressed = true;
         } else {
             c6.setBackgroundResource(android.R.drawable.btn_default);
@@ -854,7 +854,7 @@ public class Play extends ActionBarActivity {
         if (!c7_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             // mp.start();
-            c7.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c7.setBackgroundColor(Color.parseColor("#0097A7"));
             c7_pressed = true;
         } else {
             c7.setBackgroundResource(android.R.drawable.btn_default);
@@ -865,7 +865,7 @@ public class Play extends ActionBarActivity {
         if (!c8_pressed) {
             // MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             // mp.start();
-            c8.setBackgroundColor(Color.parseColor("#42A5F5"));
+            c8.setBackgroundColor(Color.parseColor("#00838F"));
             c8_pressed = true;
         } else {
             c8.setBackgroundResource(android.R.drawable.btn_default);
@@ -877,7 +877,7 @@ public class Play extends ActionBarActivity {
         if (!d1_pressed) {
             //MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //mp.start();
-            d1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d1.setBackgroundColor(Color.parseColor("#B3E5FC"));
             d1_pressed = true;
         } else {
             d1.setBackgroundResource(android.R.drawable.btn_default);
@@ -889,7 +889,7 @@ public class Play extends ActionBarActivity {
         if (!d2_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            d2.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d2.setBackgroundColor(Color.parseColor("#81D4FA"));
             d2_pressed = true;
         } else {
             d2.setBackgroundResource(android.R.drawable.btn_default);
@@ -901,7 +901,7 @@ public class Play extends ActionBarActivity {
         if (!d3_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             //   mp.start();
-            d3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d3.setBackgroundColor(Color.parseColor("#4FC3F7"));
             d3_pressed = true;
         } else {
             d3.setBackgroundResource(android.R.drawable.btn_default);
@@ -913,7 +913,7 @@ public class Play extends ActionBarActivity {
         if (!d4_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            d4.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d4.setBackgroundColor(Color.parseColor("#29B6F6"));
             d4_pressed = true;
         } else {
             d4.setBackgroundResource(android.R.drawable.btn_default);
@@ -924,7 +924,7 @@ public class Play extends ActionBarActivity {
         if (!d5_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            d5.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d5.setBackgroundColor(Color.parseColor("#03A9F4"));
             d5_pressed = true;
         } else {
             d5.setBackgroundResource(android.R.drawable.btn_default);
@@ -935,7 +935,7 @@ public class Play extends ActionBarActivity {
         if (!d6_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            d6.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d6.setBackgroundColor(Color.parseColor("#039BE5"));
             d6_pressed = true;
         } else {
             d6.setBackgroundResource(android.R.drawable.btn_default);
@@ -946,7 +946,7 @@ public class Play extends ActionBarActivity {
         if (!d7_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            d7.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d7.setBackgroundColor(Color.parseColor("#0288D1"));
             d7_pressed = true;
         } else {
             d7.setBackgroundResource(android.R.drawable.btn_default);
@@ -957,7 +957,7 @@ public class Play extends ActionBarActivity {
         if (!d8_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            d8.setBackgroundColor(Color.parseColor("#90CAF9"));
+            d8.setBackgroundColor(Color.parseColor("#0277BD"));
             d8_pressed = true;
         } else {
             d8.setBackgroundResource(android.R.drawable.btn_default);
@@ -970,7 +970,7 @@ public class Play extends ActionBarActivity {
         if (!e1_pressed) {
             //MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //mp.start();
-            e1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e1.setBackgroundColor(Color.parseColor("#BBDEFB"));
             e1_pressed = true;
         } else {
             e1.setBackgroundResource(android.R.drawable.btn_default);
@@ -994,7 +994,7 @@ public class Play extends ActionBarActivity {
         if (!e3_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             //   mp.start();
-            e3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e3.setBackgroundColor(Color.parseColor("#64B5F6"));
             e3_pressed = true;
         } else {
             e3.setBackgroundResource(android.R.drawable.btn_default);
@@ -1006,7 +1006,7 @@ public class Play extends ActionBarActivity {
         if (!e4_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            e4.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e4.setBackgroundColor(Color.parseColor("#42A5F5"));
             e4_pressed = true;
         } else {
             e4.setBackgroundResource(android.R.drawable.btn_default);
@@ -1017,7 +1017,7 @@ public class Play extends ActionBarActivity {
         if (!e5_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            e5.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e5.setBackgroundColor(Color.parseColor("#2196F3"));
             e5_pressed = true;
         } else {
             e5.setBackgroundResource(android.R.drawable.btn_default);
@@ -1028,7 +1028,7 @@ public class Play extends ActionBarActivity {
         if (!e6_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            e6.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e6.setBackgroundColor(Color.parseColor("#1E88E5"));
             e6_pressed = true;
         } else {
             e6.setBackgroundResource(android.R.drawable.btn_default);
@@ -1039,7 +1039,7 @@ public class Play extends ActionBarActivity {
         if (!e7_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            e7.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e7.setBackgroundColor(Color.parseColor("#1976D2"));
             e7_pressed = true;
         } else {
             e7.setBackgroundResource(android.R.drawable.btn_default);
@@ -1050,7 +1050,7 @@ public class Play extends ActionBarActivity {
         if (!e8_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            e8.setBackgroundColor(Color.parseColor("#90CAF9"));
+            e8.setBackgroundColor(Color.parseColor("#1565C0"));
             e8_pressed = true;
         } else {
             e8.setBackgroundResource(android.R.drawable.btn_default);
@@ -1065,7 +1065,7 @@ public class Play extends ActionBarActivity {
         if (!f1_pressed) {
             //MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //mp.start();
-            f1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f1.setBackgroundColor(Color.parseColor("#C5CAE9"));
             f1_pressed = true;
         } else {
             f1.setBackgroundResource(android.R.drawable.btn_default);
@@ -1077,7 +1077,7 @@ public class Play extends ActionBarActivity {
         if (!f2_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            f2.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f2.setBackgroundColor(Color.parseColor("#9FA8DA"));
             f2_pressed = true;
         } else {
             f2.setBackgroundResource(android.R.drawable.btn_default);
@@ -1089,7 +1089,7 @@ public class Play extends ActionBarActivity {
         if (!f3_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             //   mp.start();
-            f3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f3.setBackgroundColor(Color.parseColor("#7986CB"));
             f3_pressed = true;
         } else {
             f3.setBackgroundResource(android.R.drawable.btn_default);
@@ -1101,7 +1101,7 @@ public class Play extends ActionBarActivity {
         if (!f4_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            f4.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f4.setBackgroundColor(Color.parseColor("#5C6BC0"));
             f4_pressed = true;
         } else {
             f4.setBackgroundResource(android.R.drawable.btn_default);
@@ -1112,7 +1112,7 @@ public class Play extends ActionBarActivity {
         if (!f5_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            f5.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f5.setBackgroundColor(Color.parseColor("#3F51B5"));
             f5_pressed = true;
         } else {
             f5.setBackgroundResource(android.R.drawable.btn_default);
@@ -1123,7 +1123,7 @@ public class Play extends ActionBarActivity {
         if (!f6_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            f6.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f6.setBackgroundColor(Color.parseColor("#3949AB"));
             f6_pressed = true;
         } else {
             f6.setBackgroundResource(android.R.drawable.btn_default);
@@ -1134,7 +1134,7 @@ public class Play extends ActionBarActivity {
         if (!f7_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            f7.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f7.setBackgroundColor(Color.parseColor("#303F9F"));
             f7_pressed = true;
         } else {
             f7.setBackgroundResource(android.R.drawable.btn_default);
@@ -1145,7 +1145,7 @@ public class Play extends ActionBarActivity {
         if (!f8_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            f8.setBackgroundColor(Color.parseColor("#90CAF9"));
+            f8.setBackgroundColor(Color.parseColor("#283593"));
             f8_pressed = true;
         } else {
             f8.setBackgroundResource(android.R.drawable.btn_default);
@@ -1159,7 +1159,7 @@ public class Play extends ActionBarActivity {
         if (!g1_pressed) {
             //MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //mp.start();
-            g1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g1.setBackgroundColor(Color.parseColor("#D1C4E9"));
             g1_pressed = true;
         } else {
             g1.setBackgroundResource(android.R.drawable.btn_default);
@@ -1171,7 +1171,7 @@ public class Play extends ActionBarActivity {
         if (!g2_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            g2.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g2.setBackgroundColor(Color.parseColor("#B39DDB"));
             g2_pressed = true;
         } else {
             g2.setBackgroundResource(android.R.drawable.btn_default);
@@ -1183,7 +1183,7 @@ public class Play extends ActionBarActivity {
         if (!g3_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             //   mp.start();
-            g3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g3.setBackgroundColor(Color.parseColor("#9575CD"));
             g3_pressed = true;
         } else {
             g3.setBackgroundResource(android.R.drawable.btn_default);
@@ -1195,7 +1195,7 @@ public class Play extends ActionBarActivity {
         if (!g4_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            g4.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g4.setBackgroundColor(Color.parseColor("#7E57C2"));
             g4_pressed = true;
         } else {
             g4.setBackgroundResource(android.R.drawable.btn_default);
@@ -1206,7 +1206,7 @@ public class Play extends ActionBarActivity {
         if (!g5_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            g5.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g5.setBackgroundColor(Color.parseColor("#673AB7"));
             g5_pressed = true;
         } else {
             g5.setBackgroundResource(android.R.drawable.btn_default);
@@ -1217,7 +1217,7 @@ public class Play extends ActionBarActivity {
         if (!g6_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            g6.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g6.setBackgroundColor(Color.parseColor("#5E35B1"));
             g6_pressed = true;
         } else {
             g6.setBackgroundResource(android.R.drawable.btn_default);
@@ -1228,7 +1228,7 @@ public class Play extends ActionBarActivity {
         if (!g7_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            g7.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g7.setBackgroundColor(Color.parseColor("#512DA8"));
             g7_pressed = true;
         } else {
             g7.setBackgroundResource(android.R.drawable.btn_default);
@@ -1239,7 +1239,7 @@ public class Play extends ActionBarActivity {
         if (!g8_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            g8.setBackgroundColor(Color.parseColor("#90CAF9"));
+            g8.setBackgroundColor(Color.parseColor("#4527A0"));
             g8_pressed = true;
         } else {
             g8.setBackgroundResource(android.R.drawable.btn_default);
@@ -1251,7 +1251,7 @@ public class Play extends ActionBarActivity {
         if (!h1_pressed) {
             //MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
             //mp.start();
-            h1.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h1.setBackgroundColor(Color.parseColor("#E1BEE7"));
             h1_pressed = true;
         } else {
             h1.setBackgroundResource(android.R.drawable.btn_default);
@@ -1263,7 +1263,7 @@ public class Play extends ActionBarActivity {
         if (!h2_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep2);
             //  mp.start();
-            h2.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h2.setBackgroundColor(Color.parseColor("#CE93D8"));
             h2_pressed = true;
         } else {
             h2.setBackgroundResource(android.R.drawable.btn_default);
@@ -1275,7 +1275,7 @@ public class Play extends ActionBarActivity {
         if (!h3_pressed) {
             //   MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.djsound1);
             //   mp.start();
-            h3.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h3.setBackgroundColor(Color.parseColor("#BA68C8"));
             h3_pressed = true;
         } else {
             h3.setBackgroundResource(android.R.drawable.btn_default);
@@ -1287,7 +1287,7 @@ public class Play extends ActionBarActivity {
         if (!h4_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            h4.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h4.setBackgroundColor(Color.parseColor("#AB47BC"));
             h4_pressed = true;
         } else {
             h4.setBackgroundResource(android.R.drawable.btn_default);
@@ -1298,7 +1298,7 @@ public class Play extends ActionBarActivity {
         if (!h5_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            h5.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h5.setBackgroundColor(Color.parseColor("#9C27B0"));
             h5_pressed = true;
         } else {
             h5.setBackgroundResource(android.R.drawable.btn_default);
@@ -1309,7 +1309,7 @@ public class Play extends ActionBarActivity {
         if (!h6_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            h6.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h6.setBackgroundColor(Color.parseColor("#8E24AA"));
             h6_pressed = true;
         } else {
             h6.setBackgroundResource(android.R.drawable.btn_default);
@@ -1320,7 +1320,7 @@ public class Play extends ActionBarActivity {
         if (!h7_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            h7.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h7.setBackgroundColor(Color.parseColor("#7B1FA2"));
             h7_pressed = true;
         } else {
             h7.setBackgroundResource(android.R.drawable.btn_default);
@@ -1331,7 +1331,7 @@ public class Play extends ActionBarActivity {
         if (!h8_pressed) {
             //  MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.drum1);
             //  mp.start();
-            h8.setBackgroundColor(Color.parseColor("#90CAF9"));
+            h8.setBackgroundColor(Color.parseColor("#6A1B9A"));
             h8_pressed = true;
         } else {
             h8.setBackgroundResource(android.R.drawable.btn_default);
