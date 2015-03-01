@@ -14,15 +14,19 @@ import android.widget.RadioGroup;
 
 public class MainActivity extends ActionBarActivity {
     //List<Fragment> fragments;
+    RadioGroup radiogroup1;
+    RadioGroup radiogroup2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        radiogroup1 = (RadioGroup) findViewById(R.id.radioGroup1);
+        radiogroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
         //fragments = new ArrayList<Fragment>();
     }
 //
-//    RadioGroup radiogroup1 = (RadioGroup) findViewById(R.id.radioGroup1);
-//    RadioGroup radiogroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
+
 
 
     public void play(View view){
@@ -32,14 +36,14 @@ public class MainActivity extends ActionBarActivity {
 //        int radio1option = radiogroup1.indexOfChild(radioButton);
 
         //get option from radiogroup2
-//        int radioButtonID2 = radiogroup2.getCheckedRadioButtonId();
-//        View radioButton2 = radiogroup2.findViewById(radioButtonID2);
-//        int radio2option = radiogroup2.indexOfChild(radioButton2);
+        int radioButtonID2 = radiogroup2.getCheckedRadioButtonId();
+        View radioButton2 = radiogroup2.findViewById(radioButtonID2);
+        int radio2option = radiogroup2.indexOfChild(radioButton2);
 
         //fragments.add(openPlay);
         Intent openPlay = new Intent(MainActivity.this,Play.class);
 //        openPlay.putExtra("radio1option",radio1option);
-//        openPlay.putExtra("radio2option",radio2option);
+        openPlay.putExtra("radio2option",radio2option);
         startActivity(openPlay);
     }
 
