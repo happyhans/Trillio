@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.media.AudioManager;
 import android.widget.Spinner;
+
+import com.firebase.client.Firebase;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -175,11 +178,82 @@ public class Play extends ActionBarActivity {
     static int numMeasures = 0;
 //    MediaPlayer mp = MediaPlayer.create(Play.this,R.raw.beep1);
 
+
+    Firebase firebase;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //numMeasures++;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
+        Firebase.setAndroidContext(this);
+        firebase = new Firebase("https://trillio.firebaseio.com/");
+        firebase.child("a1").setValue(a1_pressed);
+        firebase.child("a2").setValue(a2_pressed);
+        firebase.child("a3").setValue(a3_pressed);
+        firebase.child("a4").setValue(a4_pressed);
+        firebase.child("a5").setValue(a5_pressed);
+        firebase.child("a6").setValue(a6_pressed);
+        firebase.child("a7").setValue(a7_pressed);
+        firebase.child("a8").setValue(a8_pressed);
+        firebase.child("b1").setValue(b1_pressed);
+        firebase.child("b2").setValue(b2_pressed);
+        firebase.child("b3").setValue(b3_pressed);
+        firebase.child("b4").setValue(b4_pressed);
+        firebase.child("b5").setValue(b5_pressed);
+        firebase.child("b6").setValue(b6_pressed);
+        firebase.child("b7").setValue(b7_pressed);
+        firebase.child("b8").setValue(b8_pressed);
+        firebase.child("c1").setValue(c1_pressed);
+        firebase.child("c2").setValue(c2_pressed);
+        firebase.child("c3").setValue(c3_pressed);
+        firebase.child("c4").setValue(c4_pressed);
+        firebase.child("c5").setValue(c5_pressed);
+        firebase.child("c6").setValue(c6_pressed);
+        firebase.child("c7").setValue(c7_pressed);
+        firebase.child("c8").setValue(c8_pressed);
+        firebase.child("d1").setValue(d1_pressed);
+        firebase.child("d2").setValue(d2_pressed);
+        firebase.child("d3").setValue(d3_pressed);
+        firebase.child("d4").setValue(d4_pressed);
+        firebase.child("d5").setValue(d5_pressed);
+        firebase.child("d6").setValue(d6_pressed);
+        firebase.child("d7").setValue(d7_pressed);
+        firebase.child("d8").setValue(d8_pressed);
+        firebase.child("e1").setValue(e1_pressed);
+        firebase.child("e2").setValue(e2_pressed);
+        firebase.child("e3").setValue(e3_pressed);
+        firebase.child("e4").setValue(e4_pressed);
+        firebase.child("e5").setValue(e5_pressed);
+        firebase.child("e6").setValue(e6_pressed);
+        firebase.child("e7").setValue(e7_pressed);
+        firebase.child("e8").setValue(e8_pressed);
+        firebase.child("f1").setValue(f1_pressed);
+        firebase.child("f2").setValue(f2_pressed);
+        firebase.child("f3").setValue(f3_pressed);
+        firebase.child("f4").setValue(f4_pressed);
+        firebase.child("f5").setValue(f5_pressed);
+        firebase.child("f6").setValue(f6_pressed);
+        firebase.child("f7").setValue(f7_pressed);
+        firebase.child("f8").setValue(f8_pressed);
+        firebase.child("g1").setValue(g1_pressed);
+        firebase.child("g2").setValue(g2_pressed);
+        firebase.child("g3").setValue(g3_pressed);
+        firebase.child("g4").setValue(g4_pressed);
+        firebase.child("g5").setValue(g5_pressed);
+        firebase.child("g6").setValue(g6_pressed);
+        firebase.child("g7").setValue(g7_pressed);
+        firebase.child("g8").setValue(g8_pressed);
+        firebase.child("h1").setValue(h1_pressed);
+        firebase.child("h2").setValue(h2_pressed);
+        firebase.child("h3").setValue(h3_pressed);
+        firebase.child("h4").setValue(h4_pressed);
+        firebase.child("h5").setValue(h5_pressed);
+        firebase.child("h6").setValue(h6_pressed);
+        firebase.child("h7").setValue(h7_pressed);
+        firebase.child("h8").setValue(h8_pressed);
 
         Intent intent = getIntent();
         final int beats = intent.getIntExtra("radio1option",0);
@@ -570,10 +644,12 @@ public class Play extends ActionBarActivity {
             //change color
             a1.setBackgroundColor(Color.parseColor("#C8E6C9"));
             a1_pressed = true;
+            firebase.child("a1").setValue(a1_pressed);
         } else {
             //change to default
             a1.setBackgroundResource(android.R.drawable.btn_default);
             a1_pressed = !a1_pressed;
+            firebase.child("a1").setValue(a1_pressed);
             // a1.setBackgroundColor(Color.parseColor("#B2DFDB"));
         }
     }
@@ -586,10 +662,12 @@ public class Play extends ActionBarActivity {
             //change color
             a2.setBackgroundColor(Color.parseColor("#A5D6A7"));
             a2_pressed = true;
+            firebase.child("a2").setValue(a2_pressed);
         } else {
             //a2.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a2.setBackgroundResource(android.R.drawable.btn_default);
             a2_pressed = !a2_pressed;
+            firebase.child("a2").setValue(a2_pressed);
         }
     }
 
@@ -601,9 +679,11 @@ public class Play extends ActionBarActivity {
             //change color
             a3.setBackgroundColor(Color.parseColor("#81C784"));
             a3_pressed = true;
+            firebase.child("a3").setValue(a3_pressed);
         } else {
             a3.setBackgroundResource(android.R.drawable.btn_default);
             a3_pressed = !a3_pressed;
+            firebase.child("a3").setValue(a3_pressed);
         }
     }
 
@@ -615,11 +695,12 @@ public class Play extends ActionBarActivity {
             //change color
             a4.setBackgroundColor(Color.parseColor("#66BB6A"));
             a4_pressed = true;
-
+            firebase.child("a4").setValue(a4_pressed);
         } else {
             // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a4.setBackgroundResource(android.R.drawable.btn_default);
             a4_pressed = !a4_pressed;
+            firebase.child("a4").setValue(a4_pressed);
         }
     }
 
@@ -631,11 +712,14 @@ public class Play extends ActionBarActivity {
             //change color
             a5.setBackgroundColor(Color.parseColor("#4CAF50"));
             a5_pressed = true;
+            firebase.child("a5").setValue(a5_pressed);
 
         } else {
             // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a5.setBackgroundResource(android.R.drawable.btn_default);
             a5_pressed = !a5_pressed;
+            firebase.child("a5").setValue(a5_pressed);
+
         }
     }
     public void on_a6(View view) {
@@ -646,11 +730,15 @@ public class Play extends ActionBarActivity {
             //change color
             a6.setBackgroundColor(Color.parseColor("#43A047"));
             a6_pressed = true;
+            firebase.child("a6").setValue(a6_pressed);
+
 
         } else {
             // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a6.setBackgroundResource(android.R.drawable.btn_default);
             a6_pressed = !a6_pressed;
+            firebase.child("a6").setValue(a6_pressed);
+
         }
     }
     public void on_a7(View view) {
@@ -661,11 +749,15 @@ public class Play extends ActionBarActivity {
             //change color
             a7.setBackgroundColor(Color.parseColor("#388E3C"));
             a7_pressed = true;
+            firebase.child("a7").setValue(a7_pressed);
+
 
         } else {
             // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a7.setBackgroundResource(android.R.drawable.btn_default);
             a7_pressed = !a7_pressed;
+            firebase.child("a7").setValue(a7_pressed);
+
         }
     }
     public void on_a8(View view) {
@@ -676,11 +768,14 @@ public class Play extends ActionBarActivity {
             //change color
             a8.setBackgroundColor(Color.parseColor("#2E7D32"));
             a8_pressed = true;
+            firebase.child("a8").setValue(a8_pressed);
 
         } else {
             // a4.setBackgroundColor(Color.parseColor("#B2DFDB"));
             a8.setBackgroundResource(android.R.drawable.btn_default);
             a8_pressed = !a8_pressed;
+            firebase.child("a8").setValue(a8_pressed);
+
         }
     }
 
@@ -690,9 +785,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             b1.setBackgroundColor(Color.parseColor("#B2DFDB"));
             b1_pressed = true;
+            firebase.child("b1").setValue(b1_pressed);
+
         } else {
             b1.setBackgroundResource(android.R.drawable.btn_default);
             b1_pressed = !b1_pressed;
+            firebase.child("b1").setValue(b1_pressed);
+
         }
     }
 
@@ -702,9 +801,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b2.setBackgroundColor(Color.parseColor("#80CBC4"));
             b2_pressed = true;
+            firebase.child("b2").setValue(b2_pressed);
+
         } else {
             b2.setBackgroundResource(android.R.drawable.btn_default);
             b2_pressed = !b2_pressed;
+            firebase.child("b2").setValue(b2_pressed);
+
         }
     }
 
@@ -714,9 +817,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             b3.setBackgroundColor(Color.parseColor("#4DB6AC"));
             b3_pressed = true;
+            firebase.child("b3").setValue(b3_pressed);
+
         } else {
             b3.setBackgroundResource(android.R.drawable.btn_default);
             b3_pressed = !b3_pressed;
+            firebase.child("b3").setValue(b3_pressed);
+
         }
     }
 
@@ -726,10 +833,14 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b4.setBackgroundColor(Color.parseColor("#26A69A"));
             b4_pressed = true;
+            firebase.child("b4").setValue(b4_pressed);
+
 
         } else {
             b4.setBackgroundResource(android.R.drawable.btn_default);
             b4_pressed = !b4_pressed;
+            firebase.child("b4").setValue(b4_pressed);
+
         }
     }
     public void on_b5(View view) {
@@ -738,10 +849,14 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b5.setBackgroundColor(Color.parseColor("#009688"));
             b5_pressed = true;
+            firebase.child("b5").setValue(b5_pressed);
+
 
         } else {
             b5.setBackgroundResource(android.R.drawable.btn_default);
             b5_pressed = !b5_pressed;
+            firebase.child("b5").setValue(b5_pressed);
+
         }
     }
     public void on_b6(View view) {
@@ -750,10 +865,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b6.setBackgroundColor(Color.parseColor("#00897B"));
             b6_pressed = true;
+            firebase.child("b6").setValue(b6_pressed);
 
         } else {
             b6.setBackgroundResource(android.R.drawable.btn_default);
             b6_pressed = !b6_pressed;
+            firebase.child("b6").setValue(b6_pressed);
+
         }
     }
     public void on_b7(View view) {
@@ -762,10 +880,14 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b7.setBackgroundColor(Color.parseColor("#00796B"));
             b7_pressed = true;
+            firebase.child("b7").setValue(b7_pressed);
+
 
         } else {
             b7.setBackgroundResource(android.R.drawable.btn_default);
             b7_pressed = !b7_pressed;
+            firebase.child("b7").setValue(b7_pressed);
+
         }
     }
     public void on_b8(View view) {
@@ -774,10 +896,14 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             b8.setBackgroundColor(Color.parseColor("#00695C"));
             b8_pressed = true;
+            firebase.child("b8").setValue(b8_pressed);
+
 
         } else {
             b8.setBackgroundResource(android.R.drawable.btn_default);
             b8_pressed = !b8_pressed;
+            firebase.child("b8").setValue(b8_pressed);
+
         }
     }
 
@@ -787,9 +913,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             c1.setBackgroundColor(Color.parseColor("#B2EBF2"));
             c1_pressed = true;
+            firebase.child("c1").setValue(c1_pressed);
+
         } else {
             c1.setBackgroundResource(android.R.drawable.btn_default);
             c1_pressed = !c1_pressed;
+            firebase.child("c1").setValue(c1_pressed);
+
         }
     }
 
@@ -799,9 +929,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             c2.setBackgroundColor(Color.parseColor("#80DEEA"));
             c2_pressed = true;
+            firebase.child("c2").setValue(c2_pressed);
+
         } else {
             c2.setBackgroundResource(android.R.drawable.btn_default);
             c2_pressed = !c2_pressed;
+            firebase.child("c2").setValue(c2_pressed);
+
         }
     }
 
@@ -811,9 +945,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c3.setBackgroundColor(Color.parseColor("#4DD0E1"));
             c3_pressed = true;
+            firebase.child("c3").setValue(c3_pressed);
+
         } else {
             c3.setBackgroundResource(android.R.drawable.btn_default);
             c3_pressed = !c3_pressed;
+            firebase.child("c3").setValue(c3_pressed);
+
         }
     }
 
@@ -823,9 +961,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c4.setBackgroundColor(Color.parseColor("#26C6D8"));
             c4_pressed = true;
+            firebase.child("c4").setValue(c4_pressed);
+
         } else {
             c4.setBackgroundResource(android.R.drawable.btn_default);
             c4_pressed = !c4_pressed;
+            firebase.child("c4").setValue(c4_pressed);
+
         }
     }
     public void on_c5(View view) {
@@ -834,9 +976,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c5.setBackgroundColor(Color.parseColor("#00BCD4"));
             c5_pressed = true;
+            firebase.child("c5").setValue(c5_pressed);
+
         } else {
             c5.setBackgroundResource(android.R.drawable.btn_default);
             c5_pressed = !c5_pressed;
+            firebase.child("c5").setValue(c5_pressed);
+
         }
     }
     public void on_c6(View view) {
@@ -845,9 +991,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c6.setBackgroundColor(Color.parseColor("#00ACC1"));
             c6_pressed = true;
+            firebase.child("c6").setValue(c6_pressed);
+
         } else {
             c6.setBackgroundResource(android.R.drawable.btn_default);
             c6_pressed = !c6_pressed;
+            firebase.child("c6").setValue(c6_pressed);
+
         }
     }
     public void on_c7(View view) {
@@ -856,9 +1006,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c7.setBackgroundColor(Color.parseColor("#0097A7"));
             c7_pressed = true;
+            firebase.child("c7").setValue(c7_pressed);
+
         } else {
             c7.setBackgroundResource(android.R.drawable.btn_default);
             c7_pressed = !c7_pressed;
+            firebase.child("c7").setValue(c7_pressed);
+
         }
     }
     public void on_c8(View view) {
@@ -867,9 +1021,13 @@ public class Play extends ActionBarActivity {
             // mp.start();
             c8.setBackgroundColor(Color.parseColor("#00838F"));
             c8_pressed = true;
+            firebase.child("c8").setValue(c8_pressed);
+
         } else {
             c8.setBackgroundResource(android.R.drawable.btn_default);
             c8_pressed = !c8_pressed;
+            firebase.child("c8").setValue(c8_pressed);
+
         }
     }
 
@@ -879,9 +1037,13 @@ public class Play extends ActionBarActivity {
             //mp.start();
             d1.setBackgroundColor(Color.parseColor("#B3E5FC"));
             d1_pressed = true;
+            firebase.child("d1").setValue(d1_pressed);
+
         } else {
             d1.setBackgroundResource(android.R.drawable.btn_default);
             d1_pressed = !d1_pressed;
+            firebase.child("d1").setValue(d1_pressed);
+
         }
     }
 
@@ -891,9 +1053,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d2.setBackgroundColor(Color.parseColor("#81D4FA"));
             d2_pressed = true;
+            firebase.child("d2").setValue(d2_pressed);
+
         } else {
             d2.setBackgroundResource(android.R.drawable.btn_default);
             d2_pressed = !d2_pressed;
+            firebase.child("d2").setValue(d2_pressed);
+
         }
     }
 
@@ -903,9 +1069,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             d3.setBackgroundColor(Color.parseColor("#4FC3F7"));
             d3_pressed = true;
+            firebase.child("d3").setValue(d3_pressed);
+
         } else {
             d3.setBackgroundResource(android.R.drawable.btn_default);
             d3_pressed = !d3_pressed;
+            firebase.child("d3").setValue(d3_pressed);
+
         }
     }
 
@@ -915,9 +1085,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d4.setBackgroundColor(Color.parseColor("#29B6F6"));
             d4_pressed = true;
+            firebase.child("d4").setValue(d4_pressed);
+
         } else {
             d4.setBackgroundResource(android.R.drawable.btn_default);
             d4_pressed = !d4_pressed;
+            firebase.child("d4").setValue(d4_pressed);
+
         }
     }
     public void on_d5(View view) {
@@ -926,9 +1100,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d5.setBackgroundColor(Color.parseColor("#03A9F4"));
             d5_pressed = true;
+            firebase.child("d5").setValue(d5_pressed);
+
         } else {
             d5.setBackgroundResource(android.R.drawable.btn_default);
             d5_pressed = !d5_pressed;
+            firebase.child("d5").setValue(d5_pressed);
+
         }
     }
     public void on_d6(View view) {
@@ -937,9 +1115,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d6.setBackgroundColor(Color.parseColor("#039BE5"));
             d6_pressed = true;
+            firebase.child("d6").setValue(d6_pressed);
+
         } else {
             d6.setBackgroundResource(android.R.drawable.btn_default);
             d6_pressed = !d6_pressed;
+            firebase.child("d6").setValue(d6_pressed);
+
         }
     }
     public void on_d7(View view) {
@@ -948,9 +1130,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d7.setBackgroundColor(Color.parseColor("#0288D1"));
             d7_pressed = true;
+            firebase.child("d7").setValue(d7_pressed);
+
         } else {
             d7.setBackgroundResource(android.R.drawable.btn_default);
             d7_pressed = !d7_pressed;
+            firebase.child("d7").setValue(d7_pressed);
+
         }
     }
     public void on_d8(View view) {
@@ -959,9 +1145,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             d8.setBackgroundColor(Color.parseColor("#0277BD"));
             d8_pressed = true;
+            firebase.child("d8").setValue(d8_pressed);
+
         } else {
             d8.setBackgroundResource(android.R.drawable.btn_default);
             d8_pressed = !d8_pressed;
+            firebase.child("d8").setValue(d8_pressed);
+
         }
     }
 
@@ -972,9 +1162,13 @@ public class Play extends ActionBarActivity {
             //mp.start();
             e1.setBackgroundColor(Color.parseColor("#BBDEFB"));
             e1_pressed = true;
+            firebase.child("e1").setValue(e1_pressed);
+
         } else {
             e1.setBackgroundResource(android.R.drawable.btn_default);
             e1_pressed = !e1_pressed;
+            firebase.child("e1").setValue(e1_pressed);
+
         }
     }
 
@@ -984,9 +1178,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e2.setBackgroundColor(Color.parseColor("#90CAF9"));
             e2_pressed = true;
+            firebase.child("e2").setValue(e2_pressed);
+
         } else {
             e2.setBackgroundResource(android.R.drawable.btn_default);
             e2_pressed = !e2_pressed;
+            firebase.child("e2").setValue(e2_pressed);
+
         }
     }
 
@@ -996,9 +1194,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             e3.setBackgroundColor(Color.parseColor("#64B5F6"));
             e3_pressed = true;
+            firebase.child("e3").setValue(e3_pressed);
+
         } else {
             e3.setBackgroundResource(android.R.drawable.btn_default);
             e3_pressed = !e3_pressed;
+            firebase.child("e3").setValue(e3_pressed);
+
         }
     }
 
@@ -1008,9 +1210,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e4.setBackgroundColor(Color.parseColor("#42A5F5"));
             e4_pressed = true;
+            firebase.child("e4").setValue(e4_pressed);
+
         } else {
             e4.setBackgroundResource(android.R.drawable.btn_default);
             e4_pressed = !e4_pressed;
+            firebase.child("e4").setValue(e4_pressed);
+
         }
     }
     public void on_e5(View view) {
@@ -1019,9 +1225,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e5.setBackgroundColor(Color.parseColor("#2196F3"));
             e5_pressed = true;
+            firebase.child("e5").setValue(e5_pressed);
+
         } else {
             e5.setBackgroundResource(android.R.drawable.btn_default);
             e5_pressed = !e5_pressed;
+            firebase.child("e5").setValue(e5_pressed);
+
         }
     }
     public void on_e6(View view) {
@@ -1030,9 +1240,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e6.setBackgroundColor(Color.parseColor("#1E88E5"));
             e6_pressed = true;
+            firebase.child("e6").setValue(e6_pressed);
+
         } else {
             e6.setBackgroundResource(android.R.drawable.btn_default);
             e6_pressed = !e6_pressed;
+            firebase.child("e6").setValue(e6_pressed);
+
         }
     }
     public void on_e7(View view) {
@@ -1041,9 +1255,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e7.setBackgroundColor(Color.parseColor("#1976D2"));
             e7_pressed = true;
+            firebase.child("e7").setValue(e7_pressed);
+
         } else {
             e7.setBackgroundResource(android.R.drawable.btn_default);
             e7_pressed = !e7_pressed;
+            firebase.child("e7").setValue(e7_pressed);
+
         }
     }
     public void on_e8(View view) {
@@ -1052,9 +1270,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             e8.setBackgroundColor(Color.parseColor("#1565C0"));
             e8_pressed = true;
+            firebase.child("e8").setValue(e8_pressed);
+
         } else {
             e8.setBackgroundResource(android.R.drawable.btn_default);
             e8_pressed = !e8_pressed;
+            firebase.child("e8").setValue(e8_pressed);
+
         }
     }
 
@@ -1067,9 +1289,13 @@ public class Play extends ActionBarActivity {
             //mp.start();
             f1.setBackgroundColor(Color.parseColor("#C5CAE9"));
             f1_pressed = true;
+            firebase.child("f1").setValue(f1_pressed);
+
         } else {
             f1.setBackgroundResource(android.R.drawable.btn_default);
             f1_pressed = !f1_pressed;
+            firebase.child("f1").setValue(f1_pressed);
+
         }
     }
 
@@ -1079,9 +1305,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f2.setBackgroundColor(Color.parseColor("#9FA8DA"));
             f2_pressed = true;
+            firebase.child("f2").setValue(f2_pressed);
+
         } else {
             f2.setBackgroundResource(android.R.drawable.btn_default);
             f2_pressed = !f2_pressed;
+            firebase.child("f2").setValue(f2_pressed);
+
         }
     }
 
@@ -1091,9 +1321,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             f3.setBackgroundColor(Color.parseColor("#7986CB"));
             f3_pressed = true;
+            firebase.child("f3").setValue(f3_pressed);
+
         } else {
             f3.setBackgroundResource(android.R.drawable.btn_default);
             f3_pressed = !f3_pressed;
+            firebase.child("f3").setValue(f3_pressed);
+
         }
     }
 
@@ -1103,9 +1337,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f4.setBackgroundColor(Color.parseColor("#5C6BC0"));
             f4_pressed = true;
+            firebase.child("f4").setValue(f4_pressed);
+
         } else {
             f4.setBackgroundResource(android.R.drawable.btn_default);
             f4_pressed = !f4_pressed;
+            firebase.child("f4").setValue(f4_pressed);
+
         }
     }
     public void on_f5(View view) {
@@ -1114,9 +1352,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f5.setBackgroundColor(Color.parseColor("#3F51B5"));
             f5_pressed = true;
+            firebase.child("f5").setValue(f5_pressed);
+
         } else {
             f5.setBackgroundResource(android.R.drawable.btn_default);
             f5_pressed = !f5_pressed;
+            firebase.child("f5").setValue(f5_pressed);
+
         }
     }
     public void on_f6(View view) {
@@ -1125,9 +1367,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f6.setBackgroundColor(Color.parseColor("#3949AB"));
             f6_pressed = true;
+            firebase.child("f6").setValue(f6_pressed);
+
         } else {
             f6.setBackgroundResource(android.R.drawable.btn_default);
             f6_pressed = !f6_pressed;
+            firebase.child("f6").setValue(f6_pressed);
+
         }
     }
     public void on_f7(View view) {
@@ -1136,9 +1382,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f7.setBackgroundColor(Color.parseColor("#303F9F"));
             f7_pressed = true;
+            firebase.child("f7").setValue(f7_pressed);
+
         } else {
             f7.setBackgroundResource(android.R.drawable.btn_default);
             f7_pressed = !f7_pressed;
+            firebase.child("f7").setValue(f7_pressed);
+
         }
     }
     public void on_f8(View view) {
@@ -1147,9 +1397,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             f8.setBackgroundColor(Color.parseColor("#283593"));
             f8_pressed = true;
+            firebase.child("f8").setValue(f8_pressed);
+
         } else {
             f8.setBackgroundResource(android.R.drawable.btn_default);
             f8_pressed = !f8_pressed;
+            firebase.child("f8").setValue(f8_pressed);
+
         }
     }
 
@@ -1161,9 +1415,13 @@ public class Play extends ActionBarActivity {
             //mp.start();
             g1.setBackgroundColor(Color.parseColor("#D1C4E9"));
             g1_pressed = true;
+            firebase.child("g1").setValue(g1_pressed);
+
         } else {
             g1.setBackgroundResource(android.R.drawable.btn_default);
             g1_pressed = !g1_pressed;
+            firebase.child("g1").setValue(g1_pressed);
+
         }
     }
 
@@ -1173,9 +1431,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g2.setBackgroundColor(Color.parseColor("#B39DDB"));
             g2_pressed = true;
+            firebase.child("g2").setValue(g2_pressed);
+
         } else {
             g2.setBackgroundResource(android.R.drawable.btn_default);
             g2_pressed = !g2_pressed;
+            firebase.child("g2").setValue(g2_pressed);
+
         }
     }
 
@@ -1185,9 +1447,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             g3.setBackgroundColor(Color.parseColor("#9575CD"));
             g3_pressed = true;
+            firebase.child("g3").setValue(g3_pressed);
+
         } else {
             g3.setBackgroundResource(android.R.drawable.btn_default);
             g3_pressed = !g3_pressed;
+            firebase.child("g3").setValue(g3_pressed);
+
         }
     }
 
@@ -1197,9 +1463,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g4.setBackgroundColor(Color.parseColor("#7E57C2"));
             g4_pressed = true;
+            firebase.child("g4").setValue(g4_pressed);
+
         } else {
             g4.setBackgroundResource(android.R.drawable.btn_default);
             g4_pressed = !g4_pressed;
+            firebase.child("g4").setValue(g4_pressed);
+
         }
     }
     public void on_g5(View view) {
@@ -1208,9 +1478,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g5.setBackgroundColor(Color.parseColor("#673AB7"));
             g5_pressed = true;
+            firebase.child("g5").setValue(g5_pressed);
+
         } else {
             g5.setBackgroundResource(android.R.drawable.btn_default);
             g5_pressed = !g5_pressed;
+            firebase.child("g5").setValue(g5_pressed);
+
         }
     }
     public void on_g6(View view) {
@@ -1219,9 +1493,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g6.setBackgroundColor(Color.parseColor("#5E35B1"));
             g6_pressed = true;
+            firebase.child("g6").setValue(g6_pressed);
+
         } else {
             g6.setBackgroundResource(android.R.drawable.btn_default);
             g6_pressed = !g6_pressed;
+            firebase.child("g6").setValue(g6_pressed);
+
         }
     }
     public void on_g7(View view) {
@@ -1230,9 +1508,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g7.setBackgroundColor(Color.parseColor("#512DA8"));
             g7_pressed = true;
+            firebase.child("g7").setValue(g7_pressed);
+
         } else {
             g7.setBackgroundResource(android.R.drawable.btn_default);
             g7_pressed = !g7_pressed;
+            firebase.child("g7").setValue(g7_pressed);
+
         }
     }
     public void on_g8(View view) {
@@ -1241,9 +1523,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             g8.setBackgroundColor(Color.parseColor("#4527A0"));
             g8_pressed = true;
+            firebase.child("g8").setValue(g8_pressed);
+
         } else {
             g8.setBackgroundResource(android.R.drawable.btn_default);
             g8_pressed = !g8_pressed;
+            firebase.child("g8").setValue(g8_pressed);
+
         }
     }
     ///////////////////// h //////////////////////
@@ -1253,9 +1539,13 @@ public class Play extends ActionBarActivity {
             //mp.start();
             h1.setBackgroundColor(Color.parseColor("#E1BEE7"));
             h1_pressed = true;
+            firebase.child("h1").setValue(h1_pressed);
+
         } else {
             h1.setBackgroundResource(android.R.drawable.btn_default);
             h1_pressed = !h1_pressed;
+            firebase.child("h1").setValue(h1_pressed);
+
         }
     }
 
@@ -1265,9 +1555,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h2.setBackgroundColor(Color.parseColor("#CE93D8"));
             h2_pressed = true;
+            firebase.child("h2").setValue(h2_pressed);
+
         } else {
             h2.setBackgroundResource(android.R.drawable.btn_default);
             h2_pressed = !h2_pressed;
+            firebase.child("h2").setValue(h2_pressed);
+
         }
     }
 
@@ -1277,9 +1571,13 @@ public class Play extends ActionBarActivity {
             //   mp.start();
             h3.setBackgroundColor(Color.parseColor("#BA68C8"));
             h3_pressed = true;
+            firebase.child("h3").setValue(h3_pressed);
+
         } else {
             h3.setBackgroundResource(android.R.drawable.btn_default);
             h3_pressed = !h3_pressed;
+            firebase.child("h3").setValue(h3_pressed);
+
         }
     }
 
@@ -1289,9 +1587,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h4.setBackgroundColor(Color.parseColor("#AB47BC"));
             h4_pressed = true;
+            firebase.child("h4").setValue(h4_pressed);
+
         } else {
             h4.setBackgroundResource(android.R.drawable.btn_default);
             h4_pressed = !h4_pressed;
+            firebase.child("h4").setValue(h4_pressed);
+
         }
     }
     public void on_h5(View view) {
@@ -1300,9 +1602,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h5.setBackgroundColor(Color.parseColor("#9C27B0"));
             h5_pressed = true;
+            firebase.child("h5").setValue(h5_pressed);
+
         } else {
             h5.setBackgroundResource(android.R.drawable.btn_default);
             h5_pressed = !h5_pressed;
+            firebase.child("h5").setValue(h5_pressed);
+
         }
     }
     public void on_h6(View view) {
@@ -1311,9 +1617,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h6.setBackgroundColor(Color.parseColor("#8E24AA"));
             h6_pressed = true;
+            firebase.child("h6").setValue(h6_pressed);
+
         } else {
             h6.setBackgroundResource(android.R.drawable.btn_default);
             h6_pressed = !h6_pressed;
+            firebase.child("h6").setValue(h6_pressed);
+
         }
     }
     public void on_h7(View view) {
@@ -1322,9 +1632,13 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h7.setBackgroundColor(Color.parseColor("#7B1FA2"));
             h7_pressed = true;
+            firebase.child("h7").setValue(h7_pressed);
+
         } else {
             h7.setBackgroundResource(android.R.drawable.btn_default);
             h7_pressed = !h7_pressed;
+            firebase.child("h7").setValue(h7_pressed);
+
         }
     }
     public void on_h8(View view) {
@@ -1333,9 +1647,11 @@ public class Play extends ActionBarActivity {
             //  mp.start();
             h8.setBackgroundColor(Color.parseColor("#6A1B9A"));
             h8_pressed = true;
+            firebase.child("h8").setValue(h8_pressed);
         } else {
             h8.setBackgroundResource(android.R.drawable.btn_default);
             h8_pressed = !h8_pressed;
+            firebase.child("h8").setValue(h8_pressed);
         }
     }
 
