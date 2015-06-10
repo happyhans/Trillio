@@ -1,4 +1,4 @@
-package com.hansallendorfer.test;
+package com.example.allendorfer.trillio;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
