@@ -7,6 +7,8 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
@@ -14,36 +16,34 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-
-/* New age */
 
 public class Play extends Activity {
 
     SoundPool sounds;
 
-    Map<String, Boolean> map;
-    List<List<Boolean>> map2;
+    List<List<Boolean>> map;
     Firebase firebase;
     Firebase board;
-    Firebase board2;
     int numCols = -1;
 
     public void initialize(){
-        map = new HashMap<>();
-        map2 = new ArrayList<List<Boolean>>();
+        map = new ArrayList<List<Boolean>>();
         for(int i = 0; i < 8; i++){
-            map2.add(new ArrayList<Boolean>());
+            map.add(new ArrayList<Boolean>());
             numCols++;
             for(int j = 0; j < 8; j++){
-                map2.get(i).add(false);
+                map.get(i).add(false);
             }
         }
-        for(int i = 1; i <= 64; i++){
-            String b = "button" + i;
-            map.put(b, false);
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.board);
+        for(int i = 0; i < linearLayout.getChildCount(); i++){
+            LinearLayout linearLayout1 = (LinearLayout) linearLayout.getChildAt(i);
+            for(int j = 0; j < linearLayout1.getChildCount(); j++){
+                Button button = (Button) linearLayout1.getChildAt(j);
+                button.setTag(Integer.toString(i)+Integer.toString(j));
+            }
         }
         sounds = new SoundPool(8, AudioManager.STREAM_MUSIC,0);
         sounds.load(this, R.raw.a, 1);
@@ -65,39 +65,36 @@ public class Play extends Activity {
         Firebase.setAndroidContext(this);
         firebase = new Firebase("https://trillio.firebaseio.com/");
         board = firebase.child("board");
-        board2 = firebase.child("board2");
 
         board.setValue(map);
-        board2.setValue(map2);
 
         firebase.child("board").addChildEventListener(new ChildEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-            }
-
-            @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                String key = dataSnapshot.getKey();
-                int id = getResources().getIdentifier(key, "id", getPackageName());
-                Button button = (Button) findViewById(id);
-
-                if (dataSnapshot.getValue() == true) {
-                    button.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);
-                    map.put(dataSnapshot.getKey(), true);
-                } else {
-                    button.getBackground().clearColorFilter();
-                    map.put(dataSnapshot.getKey(), false);
+                Iterator<DataSnapshot> iterator = dataSnapshot.getChildren().iterator();
+                while(iterator.hasNext()){
+                    DataSnapshot ds = iterator.next();
+                    int xCoordinate = Integer.parseInt(dataSnapshot.getKey());
+                    int yCoordinate = Integer.parseInt(ds.getKey());
+                    Button b = (Button) findViewById(R.id.board).findViewWithTag(dataSnapshot.getKey()+ds.getKey());
+                    if(ds.getValue() == true){
+                        b.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);
+                        map.get(xCoordinate).set(yCoordinate,true);
+                    }else{
+                        b.getBackground().clearColorFilter();
+                        map.get(xCoordinate).set(yCoordinate,false);
+                    }
                 }
             }
-
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+            }
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
             }
-
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
             }
-
             @Override
             public void onCancelled(FirebaseError firebaseError) {
             }
@@ -106,36 +103,42 @@ public class Play extends Activity {
 
     public void buttonClick(View view) {
         Button button = (Button) view;
-        String buttonId = view.getResources().getResourceName(view.getId()).substring(35);
-        if (map.get(buttonId)) {
+        String buttonCoordinate = (String) button.getTag();
+
+        int xCoordinate = Integer.parseInt(buttonCoordinate.substring(0,1));
+        int yCoordinate = Integer.parseInt(buttonCoordinate.substring(1));
+
+        if (map.get(xCoordinate).get(yCoordinate)) {
             button.getBackground().clearColorFilter();
-            map.put(buttonId, false);
-            board.child(buttonId).setValue(false);
+            map.get(xCoordinate).set(yCoordinate, false);
+            board.child(Integer.toString(xCoordinate)).child(Integer.toString(yCoordinate)).setValue(false);
         } else {
             button.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);
-            map.put(buttonId, true);
-            board.child(buttonId).setValue(true);
-       }
-        board.setValue(map);
+            map.get(xCoordinate).set(yCoordinate,true);
+            board.child(Integer.toString(xCoordinate)).child(Integer.toString(yCoordinate)).setValue(true);
+        }
     }
 
     public void addBar(View view){
         if(numCols < 15){
-            map2.add(new ArrayList<Boolean>());
+            map.add(new ArrayList<Boolean>());
             numCols++;
             for(int j = 0; j < 8; j++){
-                map2.get(numCols).add(false);
+                map.get(numCols).add(false);
             }
-            board2.setValue(map2);
+            board.setValue(map);
         }
     }
 
     public void removeBar(View view){
         if(numCols != 0){
-            map2.remove(numCols);
+            LinearLayout a = (LinearLayout) findViewById(R.id.board);
+            int id = getResources().getIdentifier("c" + (numCols+1), "id", getPackageName());
+            View v = findViewById(id);
+            a.removeView(v);
+            map.remove(numCols);
             numCols--;
-            board2.setValue(map2);
+            board.setValue(map);
         }
     }
-
 }

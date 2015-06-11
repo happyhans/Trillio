@@ -8,15 +8,17 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/board"
+        android:baselineAligned="false"
+        android:focusableInTouchMode="false">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c1">
 
 
             <Button
@@ -89,7 +91,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c2">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -161,7 +164,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c3">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -233,7 +237,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c4">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -304,7 +309,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c5">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -375,7 +381,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c6">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -446,7 +453,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c7">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -517,7 +525,8 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/c8">
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -591,11 +600,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
-        android:id="@+id/addButton"
+        android:id="@+id/button"
         android:onClick="addBar"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="20sp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -604,6 +612,6 @@
         android:onClick="removeBar"
         android:id="@+id/removeButton"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/addButton" />
+        android:layout_toEndOf="@+id/button" />
 
 </RelativeLayout>
